@@ -1,0 +1,154 @@
+ /* Importaçaõ de fonte do Google Fontes */
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+ /* resetar estilo css */
+ * {
+     margin: 0px;
+     padding: 0px;
+     margin: 0px;
+ }
+
+ /* =========== configurações css padrão =================*/
+ body {
+
+     font-family: 'Open Sans', sans-serif;
+     font-size: 1em;
+ }
+
+ #cabecalho {
+    background-color: #000;
+ }
+
+ .container {
+     margin: 0 auto;
+     max-width: 90%;
+
+ }
+
+ .Flex {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ #lblmenu {
+     color: #fff;
+     font-size: 2em;
+     padding: 15px;
+
+ }
+
+ #lblmenu:hover {
+     color: rgb(231, 140, 60);
+ }
+
+ #logo h4 {
+     color: #fff;
+     padding: 25px 15px;
+     font-size: 15px;
+ }
+
+
+ #menu {
+     margin-top: 0px;
+     padding: 10px;
+
+ }
+
+ #menu ul {
+     list-style: none;
+     background-color: #343538;
+     height: 100vh;
+     position: fixed;
+     top: 60px;
+     right: -100%;
+     transition: all 0.5s;
+ }
+
+ #menu ul li {
+     padding: 15px;
+     border-bottom: 1px solid #a9a9a9;
+     margin-top: 0px;
+ }
+
+ #menu ul li a {
+     text-decoration: none;
+     color: #fff;
+ }
+
+ #check {
+     display: none;
+ }
+
+ main {
+     height: 90vh;
+     background: url(image/fundo.png);
+     background-size: cover;
+     color: #fff;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+
+ }
+
+ main h1 {
+    font-size: 2em;
+ }
+ 
+ main h2 {
+    font-size: 1.5em;
+    margin: 10px 0px 10px 0px;
+ }
+
+ main h3 {
+    font-size: 1em;
+    margin: 20px 0px 50px 0px;
+    text-align: justify;
+    font-weight: normal;
+ }
+
+ .botao {
+    text-decoration: none;
+    color:#fff;
+    font-size: 1em;
+    font-weight: 700;
+    background-color:  rgb(231, 140, 60);
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+
+ }
+ /* ===========configurações para computardo ============*/
+ @media (min-width:1000px) {
+
+     #menu {
+         padding: 0px;
+     }
+
+     #menu ul {
+         position: static;
+         height: auto;
+         background-color: transparent;
+         margin-top: 10px;
+         margin-right: 0;
+         padding: 0;
+     }
+
+     #menu ul li {
+         float: left;
+         border: 0;
+     }
+
+     #menu ul li a:hover {
+         color: rgb(231, 140, 60);
+     }
+
+     #lblmenu {
+         display: none;
+     }
+
+     #logo h4 {
+         padding: 25px;
+     }
+
+ }
