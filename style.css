@@ -16,7 +16,7 @@
  }
 
  #cabecalho {
-    background-color: #000;
+     background-color: #000;
  }
 
  .container {
@@ -28,6 +28,11 @@
  .Flex {
      display: flex;
      justify-content: space-between;
+ }
+
+ .Flex2 {
+     display: flex;
+     align-items: center;
  }
 
  #lblmenu {
@@ -80,8 +85,8 @@
      display: none;
  }
 
- #check:checked ~ul {
-    right: 0;
+ #check:checked~ul {
+     right: 0;
  }
 
  main {
@@ -93,84 +98,116 @@
      flex-direction: column;
      justify-content: center;
      text-align: center;
+     background-attachment: fixed;
 
  }
 
  main h1 {
-    font-size: 2em;
- }
- 
- main h2 {
-    font-size: 1.5em;
-    margin: 10px 0px 10px 0px;
+     font-size: 2em;
  }
 
- main h3 {
-    font-size: 1em;
-    margin: 20px 0px 50px 0px;
-    text-align: justify;
-    font-weight: normal;
+ main h2 {
+     font-size: 1.5em;
+     margin: 10px 0px 10px 0px;
  }
+
+ Main h3 {
+     font-size: 1em;
+     margin: 20px 0px 50px 0px;
+     text-align: justify;
+     font-weight: normal;
+ }
+
+#sobre h3 {
+    font-size: 1em;
+     margin: 20px 0px 50px 0px;
+     text-align: justify;
+     font-weight: normal;
+}
 
  .botao {
-    text-decoration: none;
-    color:#fff;
-    font-size: 1em;
-    font-weight: 700;
-    background-color:  rgb(231, 140, 60);
-    padding: 10px 40px;
-    border: 2px solid #fff;
-    border-radius: 5px;
+     text-decoration: none;
+     color: #fff;
+     font-size: 1em;
+     font-weight: 700;
+     background-color: rgb(231, 140, 60);
+     padding: 10px 40px;
+     border: 2px solid #fff;
+     border-radius: 5px;
 
  }
 
  #agradecimento {
-   margin-top: 100px;
-}
+     margin-top: 100px;
+ }
 
-#agradecimento h1 {
-    text-align: center;
-}
+ #agradecimento h1 {
+     text-align: center;
+ }
 
-#agradecimento h2 {
-    font-weight: normal;
-    text-align: center;
-}
+ #agradecimento h2 {
+     font-weight: normal;
+     text-align: center;
+ }
 
-/* formulario de contato */
+ /* formulario de contato */
 
-#contato {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-}
+ #contato {
+     display: flex;
+     justify-content: center;
+     margin-top: 15px;
+ }
 
 
-#divbotoes {
-    padding: 10px 0px 0px 0px ;
-    display: flex;
-    justify-content:space-around;
-    
-}
+ #divbotoes {
+     padding: 10px 0px 0px 0px;
+     display: flex;
+     justify-content: space-around;
 
-.botoes {
-    width: 75px;
-    height: 25px;
-}
+ }
 
-.divcampos {
+ .botoes {
+     width: 75px;
+     height: 25px;
+ }
 
-    display: flex;
-    justify-content: center;
+ .divcampos {
 
-}
+     display: flex;
+     justify-content: center;
 
-#agradecimento {
-    display: block;
-    justify-content: center;
-    
-    
-}
+ }
+
+ #agradecimento {
+     display: block;
+     justify-content: center;
+
+
+ }
+
+ /* ===================== sobre =========================*/
+
+ #sobre {
+     padding: 50px 0px;
+ }
+
+ #destaquesobre {
+     display: none;
+ }
+
+ #textosobre {
+     text-align: justify;
+ }
+
+ #textosobre h2 {
+     margin-bottom: 10px;
+ }
+
+ #destaquesobre img {
+     border-radius: 0%;
+ }
+
+
  /* ===========configurações para computardo ============*/
  @media (min-width:1000px) {
 
@@ -202,6 +239,14 @@
 
      #logo h4 {
          padding: 25px;
+     }
+
+     #destaquesobre {
+         display: inline;
+     }
+
+     #textosobre {
+         padding: 0px 25px;
      }
 
  }
