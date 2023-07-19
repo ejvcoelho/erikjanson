@@ -118,6 +118,54 @@
     border-radius: 5px;
 
  }
+
+ #agradecimento {
+   margin-top: 100px;
+}
+
+#agradecimento h1 {
+    text-align: center;
+}
+
+#agradecimento h2 {
+    font-weight: normal;
+    text-align: center;
+}
+
+/* formulario de contato */
+
+#contato {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+
+#divbotoes {
+    padding: 10px 0px 0px 0px ;
+    display: flex;
+    justify-content:space-around;
+    
+}
+
+.botoes {
+    width: 75px;
+    height: 25px;
+}
+
+.divcampos {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+#agradecimento {
+    display: block;
+    justify-content: center;
+    
+    
+}
  /* ===========configurações para computardo ============*/
  @media (min-width:1000px) {
 
