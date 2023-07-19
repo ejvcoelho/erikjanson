@@ -50,6 +50,7 @@
 
  #menu {
      margin-top: 0px;
+     direction: block;
      padding: 10px;
 
  }
@@ -77,6 +78,10 @@
 
  #check {
      display: none;
+ }
+
+ #check:checked ~ul {
+    right: 0;
  }
 
  main {
