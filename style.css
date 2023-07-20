@@ -14,7 +14,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     ::selection {
-        background: #9c7736;
+        background-color: #9c7736;
         color: #fff;
     }
 }
@@ -33,6 +33,7 @@ body {
 
 .sectiontext {
     padding-left: 7px;
+    padding-left: 7px;
     color: #868585;
       
 }
@@ -44,7 +45,11 @@ body {
 .container {
     margin: 0 auto;
     max-width: 1200px;
+}
 
+.divisor {
+    width: 500px;
+    text-shadow: #000 0.05em 0.05em 0.05em;;
 }
 
 .Flex {
@@ -77,9 +82,8 @@ body {
 
 #menu {
     margin-top: 0px;
-    direction: block;
+    /* direction: block; */
     padding: 10px;
-
 }
 
 #menu ul {
@@ -206,6 +210,8 @@ Main h3 {
 
 
 }
+
+
 
 /* ===================== sobre =========================*/
 
