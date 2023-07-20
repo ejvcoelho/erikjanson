@@ -51,7 +51,6 @@ body {
 .divisor {
     width: 500px;
     text-shadow: #000 0.05em 0.05em 0.05em;
-    ;
 }
 
 .Flex {
@@ -317,4 +316,46 @@ Main h3 {
 
 #rodape a {
     text-decoration: none;
+    color:  #9c7736;
+}
+
+.fotolegenda {
+    position: relative;
+
+}
+
+.fotolegenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+.fotolegenda:hover figcaption {
+    opacity: 1;
+}
+
+figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+figcaption div {
+    text-align: center;
+}
+
+figcaption div h2 {
+    color:#9c7736;
+    text-shadow: #000 0.05em 0.05em 0.05em;
+}
+
+figcaption div h4 {
+    font-weight: normal;
 }
