@@ -49,8 +49,9 @@ body {
 }
 
 .divisor {
-    width: 500px;
+    max-width: 700px;
     text-shadow: #000 0.05em 0.05em 0.05em;
+    padding: 10px;
 }
 
 .Flex {
@@ -66,7 +67,9 @@ body {
 #lblmenu {
     color: #fff;
     font-size: 2em;
-    padding: 15px;
+    position: fixed;
+    top: 2px;
+    right: 15px;
 
 }
 
@@ -226,6 +229,7 @@ Main h3 {
 
 #textosobre {
     text-align: justify;
+    padding: 10px;
 }
 
 #textosobre h2 {
