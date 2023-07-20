@@ -13,6 +13,7 @@ body {
 
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
+
     ::selection {
         background-color: #9c7736;
         color: #fff;
@@ -26,16 +27,16 @@ body {
     line-height: 1;
     text-transform: uppercase;
     color: #aaaaaa;
-    border-left: 3px solid #9c7736;    
+    border-left: 3px solid #9c7736;
     font-weight: 700;
 
-} 
+}
 
 .sectiontext {
     padding-left: 7px;
     padding-left: 7px;
     color: #868585;
-      
+
 }
 
 #cabecalho {
@@ -49,7 +50,8 @@ body {
 
 .divisor {
     width: 500px;
-    text-shadow: #000 0.05em 0.05em 0.05em;;
+    text-shadow: #000 0.05em 0.05em 0.05em;
+    ;
 }
 
 .Flex {
@@ -277,4 +279,42 @@ Main h3 {
         padding: 0px 25px;
     }
 
+}
+
+/* -------------- configurações globais* ------------------/
+
+/*====>> botão voltar ao topo */
+
+.voltar-ao-topo {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    padding: 1em;
+}
+
+.voltar-ao-topo:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#seta {
+    font-size: 14px;
+}
+
+#rodape h2 {
+    text-decoration: none;
+    color:  #9c7736;
+    font-weight: normal;
+    font-size: 12px;
+    background-color: #000;
+    height: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#rodape a {
+    text-decoration: none;
 }
