@@ -56,7 +56,8 @@ body {
 
 .Flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+
 }
 
 .Flex2 {
@@ -69,6 +70,11 @@ body {
     flex-direction: column;
 }
 
+.Flex4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
 
 #lblmenu {
     color: #fff;
@@ -203,7 +209,6 @@ Main h3 {
     padding: 10px 40px;
     border: 2px solid #fff;
     border-radius: 5px;
-
 }
 
 #agradecimento {
@@ -275,61 +280,6 @@ Main h3 {
     border-radius: 0%;
 }
 
-
-/* ===========configurações para computador ============*/
-@media (min-width:1000px) {
-
-    #menu {
-        padding: 0px;
-    }
-
-    #menu ul {
-        position: static;
-        height: auto;
-        background-color: transparent;
-        margin-top: 10px;
-        margin-right: 0;
-        padding: 0;
-    }
-
-    #menu ul li {
-        float: left;
-        border: 0;
-    }
-
-    #menu ul li a:hover {
-        color: #9c7736;
-    }
-
-    #lblmenu {
-        display: none;
-    }
-
-    #logo h4 {
-        padding: 25px;
-    }
-
-    #destaquesobre {
-        display: inline;
-    }
-
-    #textosobre {
-        padding: 0px 25px;
-    }
-
-    #video iframe {
-        width: 560px;
-        height: 315px;
-    }
-
-    /* modificando o Flex 3 - secção do vídeos */
-    .Flex3 {
-        flex-direction: row;
-        align-items: center;
-    }
-}
-
-/* -------------- configurações globais* ------------------/
 
 /*====>> botão voltar ao topo */
 
@@ -407,4 +357,194 @@ figcaption div h2 {
 
 figcaption div h4 {
     font-weight: normal;
+}
+
+
+/* =============== cartoes de publicação ================*/
+
+.todos {
+    padding: 50px 0;
+    text-align: center;
+
+}
+
+.todos a {
+    text-decoration: none;
+    color:#fff;
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+.card { /* criando o layout dos cartões*/
+    margin-top: 25px;
+    width: 338px;
+    height: 520px;
+    background-color: #e8e8e8;
+    border: 1px solid #a1a1a1;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.card h3 {
+    margin-top: 15px;
+}
+
+.card p {
+    text-align: justify;
+    color: #434343;
+    padding: 10px 30px 50px 30px;
+}
+
+.card a {
+    padding: 10px 100px;
+    border: 0;
+}
+
+footer {
+    padding: 50px 0px;
+}
+
+/* ================== páginas de argitos ============ */
+#publicacoes-todas {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#foto {
+    max-width: 800px;
+    display: none;
+}
+
+#imagemartigo {
+    text-align: center;
+}
+
+#corpoartigo {
+    padding-bottom: 25px;
+    max-width: 800px;
+}
+
+.publicacao {
+    padding: 10px;
+    text-align: justify;
+    margin-top: 25px;
+}
+
+.publicacao h4 {
+    color: #9c7736;
+}
+
+.citacao {
+    margin-left: 1.5cm;
+    background-color:   #f7f7f7;
+    border-left: 5px solid #9c7736;
+    padding: 15px;
+    font-style: italic;
+}
+
+.tituloartigo {
+    position: relative;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ccc;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 25px;
+}
+
+.tituloartigo h6 {
+    color: #9c7736;
+    font-weight: normal;
+    font-size: 10px;
+    text-transform: none;
+}
+.textonegrito {
+    font-weight: 700;
+}
+
+.listaartigo {
+    margin-left: 1.5cm;
+}
+
+.conteudoartigo a {
+    text-decoration: none;
+    color:#9c7736;
+}
+
+#referencias {
+    word-wrap: break-word;
+}
+
+/* ===========configurações para computador ============*/
+@media (min-width:1000px) {
+
+    #menu {
+        padding: 0px;
+    }
+
+    #menu ul {
+        position: static;
+        height: auto;
+        background-color: transparent;
+        margin-top: 10px;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    #menu ul li {
+        float: left;
+        border: 0;
+    }
+
+    #menu ul li a:hover {
+        color: #9c7736;
+    }
+
+    #lblmenu {
+        display: none;
+    }
+
+    #logo h4 {
+        padding: 25px;
+    }
+
+    #destaquesobre {
+        display: inline;
+    }
+
+    #textosobre {
+        padding: 0px 25px;
+    }
+
+    #video iframe {
+        width: 560px;
+        height: 315px;
+    }
+
+    /* modificando o Flex 3 - secção do vídeos */
+    .Flex3 {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .citacao {
+        margin-left: 4cm;
+        background-color:   #f7f7f7;
+        border-left: 5px solid #9c7736;
+        padding: 15px;
+        font-style: italic;
+    }
+
+    #foto {
+        max-width: 800px;
+        display:inline;
+    }
+}
+
+footer {
+    padding: 0px;
 }
