@@ -247,6 +247,10 @@ Main h3 {
     margin-bottom: 25px;
 }   
 
+.link-servicos {
+    text-decoration: none;
+    color: #9c7736;
+}
 .servicos {
     font-size: 50px;
     color: #9c7736;
@@ -254,8 +258,6 @@ Main h3 {
     padding: 15px;
     justify-content: flex-start;
     width: 300px;
-   
-
 }
 
 .conteudo-servico {
