@@ -16,7 +16,7 @@ html {
 /* =========== configurações css padrão =================*/
 body {
 
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
     /*font-family: Arial, Helvetica, sans-serif;*/
     font-size: 1em;
 
@@ -82,10 +82,7 @@ body {
     justify-content: space-evenly;
 }
 
-.Flex5 {
-    display: flex;
-    justify-content: flex-start;
-}
+
 
 .flex-wrap {
     display: flex;
@@ -259,12 +256,13 @@ Main h3 {
 
 .margem-fundo {
     margin-bottom: 25px;
-}   
+}
 
 .link-servicos {
     text-decoration: none;
     color: #9c7736;
 }
+
 .servicos {
     font-size: 50px;
     color: #9c7736;
@@ -304,6 +302,7 @@ Main h3 {
 /* ============ formulario de contato ============*/
 
 .form-contato {
+    width: 285px;
     color: #9c7736;
     padding-top: 25px;
     border: 1px solid #9c7736;
@@ -367,6 +366,9 @@ Main h3 {
 #destaquesobre img {
     border-radius: 0%;
 }
+
+
+
 
 
 /*====>> botão voltar ao topo */
@@ -585,6 +587,18 @@ figcaption div h5 {
     word-wrap: break-word;
 }
 
+.mapa iframe {
+    width: 325px;
+    height: 200px;
+    padding-top: 15px;
+}
+
+.Flex5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
 /* ===========configurações para computador ============*/
 @media (min-width:1000px) {
 
@@ -649,7 +663,12 @@ figcaption div h5 {
         max-width: 800px;
         display: inline;
     }
+
+
+    .mapa iframe {
+        width: 600px;
+        height: 450px;
+        padding-top: 15px;
+    }
+
 }
-
-
-
