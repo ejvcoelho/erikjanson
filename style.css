@@ -13,6 +13,23 @@ html {
     scroll-behavior: smooth;
 }
 
+/* página de painel financeiro*/
+.painel--financeiro {
+    display:flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.conteudo-painel-financeiro {
+    padding: 10px;
+}
+
+.ativo--unico {
+    display: block;
+    width: 99.8%;
+    border: 1px solid #000;
+}
+
 /* =========== configurações css padrão =================*/
 body {
 
@@ -48,6 +65,7 @@ body {
 #cabecalho {
     background-color: #000;
 }
+
 
 .container {
     margin: 0 auto;
