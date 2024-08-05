@@ -339,10 +339,14 @@ Main h3 {
 }
 
 #divbotoes {
-    padding: 10px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 
+}
+
+#divbotoes button {
+    margin-right: 50px;
 }
 
 .botoes {
