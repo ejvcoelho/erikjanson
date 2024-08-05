@@ -23,7 +23,15 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <script async defer src="https://www.google.com/recaptcha/api.js"></script> <!-- script do google re-captcha-->
+
+    <!-- Código do ReCaptcha-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <script>
+       function onSubmit(token) {
+         document.getElementById("formulario").submit();
+       }
+     </script>
+     <!-- ---------------------->
 
 </head>
 
@@ -365,14 +373,13 @@
                         <textarea name="comentario" id="mensagem" cols="35" rows="10"></textarea>
                     </div>
                     <br>
-                    <div class="g-recaptcha" data-sitekey="6LfdqgUqAAAAAGxCOqoMIFLbe4GV-9IhFwZOttq_"></div>
                     <div id="divbotoes">
-                        <input type="submit" name="BTEnvia" value="Enviar" class="botoes">
+                        <input type="submit" name="BTEnvia" value="Enviar" class="botoes g-recaptcha" data-sitekey="6Ld4AiAqAAAAAG71xGZO_AS84Qs2xTfvR6OhE6IE" data-callback="onSubmit">
                         <input type="reset" name="BTApaga" value="Apagar" class="botoes">
                     </div>
                     <br>
 
-
+                    <!-- <button class="g-recaptcha" data-sitekey="your_site_key" data-callback="onSubmit">Submit</button> -->
 
                 </form>
             </div>
