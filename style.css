@@ -347,6 +347,8 @@ Main h3 {
 
 #divbotoes button {
     margin-right: 50px;
+    width: 75px;
+    height: 25px;
 }
 
 .botoes {
