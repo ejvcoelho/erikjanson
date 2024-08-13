@@ -351,11 +351,9 @@
                 <div id="titulo-contato">
                     <h4>ENTRE EM CONTATO</h4>
                 </div>
-                <form action="http://formmail.kinghost.net/formmail.cgi" method="post" id="formulario">
-                    <input type="hidden" name="recipient" value="contato@erikjanson.adv.br; ejvcoelho@gmail.com">
-                    <input type="hidden" name="redirect" value="https://erikjanson.adv.br/agradecimento.html">
-                    <input type="hidden" name="subject" value="Contato Site Erik Janson Advogado">
-                    <input type="hidden" name="email" value="contato@erikjanson.adv.br">
+                <form action="https://globogroup.com.br/scpj/system/send_mail/send_mail_ejvc.php" method="post" id="formulario">
+                    <input type="hidden" name="destinatario" value="contato@erikjanson.adv.br">
+                    <input type="hidden" name="assunto" value="Contato Site Erik Janson Advogado">
                     <br>
                     <h3>Nome:</h3>
                     <div class="divcampos">
@@ -364,13 +362,13 @@
                     <br>
                     <h3>E-mail:</h3>
                     <div class="divcampos">
-                        <input type="text" id="email" size="35" name="replyto">
+                        <input type="text" id="email" size="35" name="email">
                     </div>
                     <br>
                     <h3>Deixe sua mensagem:</h3>
                     <!--<input type="text" id="mensagem" size="35" name="comentario">-->
                     <div class="divcampos">
-                        <textarea name="comentario" id="mensagem" cols="35" rows="10"></textarea>
+                        <textarea name="mensagem" id="mensagem" cols="35" rows="10"></textarea>
                     </div>
                     <br>
                     <div id="divbotoes">
