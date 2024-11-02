@@ -1,13 +1,26 @@
 <html>
   <head>
-    <title>Teste 3</title>
+    <title>Teste 4</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
     <form action="?" method="get">
       <!-- Campos do formulário -->
-      <input class="g-recaptcha" data-sitekey="6Lebh3MqAAAAAB0aAJbJA__1jJF4mALySIDtRSoY">
+      <div class="g-recaptcha" data-sitekey="6Lebh3MqAAAAAB0aAJbJA__1jJF4mALySIDtRSoY" id="recaptcha">
       <button type="submit">Enviar</button>
   </form>
-  </body>
+  
+  <script>
+    function verificarCampo() {
+        const campo = document.getElementById("recaptcha").value;
+        
+        if (campo.trim() === "") {
+            alert("O campo está vazio.");
+        } else {
+            alert("O campo possui valor.");
+        }
+    }
+    </script>
+</body>
+
 </html>
