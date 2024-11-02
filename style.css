@@ -400,7 +400,7 @@ Main h3 {
 .voltar-ao-topo {
     position: fixed;
     bottom: 2em;
-    right: 2em;
+    left: 2em;
     text-decoration: none;
     color: white;
     background-color: rgba(0, 0, 0, 0.3);

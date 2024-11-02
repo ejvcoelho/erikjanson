@@ -26,11 +26,7 @@
 
     <!-- Código do ReCaptcha-->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-     <script>
-       function onSubmit(token) {
-         document.getElementById("formulario").submit();
-       }
-     </script>
+     
      <!-- ---------------------->
 
 </head>
@@ -363,6 +359,7 @@
                     <h4>ENTRE EM CONTATO</h4>
                 </div>
                 <form action="https://globogroup.com.br/scpj/system/send_mail/send_mail_ejvc.php" method="post" id="formulario">
+                    <div class="g-recaptcha" data-sitekey="6Lebh3MqAAAAAB0aAJbJA__1jJF4mALySIDtRSoY"></div>
                     <input type="hidden" name="destinatario" value="contato@erikjanson.adv.br">
                     <input type="hidden" name="assunto" value="Contato Site Erik Janson Advogado">
                     <br>
@@ -383,8 +380,8 @@
                     </div>
                     <br>
                     <div id="divbotoes">
-                        <button class="g-recaptcha" data-sitekey="6Lebh3MqAAAAAB0aAJbJA__1jJF4mALySIDtRSoY" data-callback="onSubmit">Enviar</button>
-                        <!--<input type="submit" name="BTEnvia" value="Enviar" class="botoes">-->
+                        <!--<button class="g-recaptcha" data-sitekey="6Lebh3MqAAAAAB0aAJbJA__1jJF4mALySIDtRSoY" data-callback="onSubmit">Enviar</button>-->
+                        <input type="submit" name="BTEnvia" value="Enviar" class="botoes">
                         <input type="reset" name="BTApaga" value="Apagar" class="botoes">
                     </div>
                     <br>
