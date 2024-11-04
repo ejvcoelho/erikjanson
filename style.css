@@ -355,6 +355,7 @@ Main h3 {
 .botoes {
     width: 75px;
     height: 25px;
+    margin: 5px;
 }
 
 .divcampos {
