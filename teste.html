@@ -9,11 +9,11 @@
        <input type="text" name="teste" id="teste">
       <div class="g-recaptcha" data-sitekey="6Lebh3MqAAAAAB0aAJbJA__1jJF4mALySIDtRSoY" id="recaptcha"></div>
       <!-- <button onclick="verificarCampo()">Enviar</button>-->
-      <input type="button" value="Enviar" onclick="verificarCampo()">
+      <input type="button" value="Enviar" onclick="verificareCaptcha()">
   </form>
   
   <script>
-    function verificarCampo() {
+    function verificareCaptcha() {
         const campo =  document.querySelector('#g-recaptcha-response').value
 
         if (campo.trim() === "") {
