@@ -4,16 +4,19 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
-    <form action="?" method="get">
+    <form action="?" method="get" name="form">
       <!-- Campos do formulário -->
+       <input type="text" name="teste" id="teste">
       <div class="g-recaptcha" data-sitekey="6Lebh3MqAAAAAB0aAJbJA__1jJF4mALySIDtRSoY" id="recaptcha"></div>
-      <button type="submit" onclick="verificarCampo()">Enviar</button>
+      <button onclick="verificarCampo()">Enviar</button>
   </form>
   
   <script>
     function verificarCampo() {
-        const campo = document.getElementById("recaptcha").value;
+        const campo =  document.querySelector('#g-recaptcha-response').value
         
+        alert(campo);
+
         if (campo.trim() === "") {
             alert("O campo está vazio.");
         } else {
