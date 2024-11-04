@@ -4,23 +4,22 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
-    <form action="?" method="get" name="form">
+    <form action="?" method="get" name="form" id="meuFormulario">
       <!-- Campos do formulário -->
        <input type="text" name="teste" id="teste">
       <div class="g-recaptcha" data-sitekey="6Lebh3MqAAAAAB0aAJbJA__1jJF4mALySIDtRSoY" id="recaptcha"></div>
-      <button onclick="verificarCampo()">Enviar</button>
+      <!-- <button onclick="verificarCampo()">Enviar</button>-->
+      <input type="button" value="Enviar" onclick="verificarCampo()">
   </form>
   
   <script>
     function verificarCampo() {
         const campo =  document.querySelector('#g-recaptcha-response').value
-        
-        alert(campo);
 
         if (campo.trim() === "") {
-            alert("O campo está vazio.");
+            alert("O reCaptcha não foi preenchido.");
         } else {
-            alert("O campo possui valor.");
+          document.getElementById("meuFormulario").submit();
         }
     }
     </script>
