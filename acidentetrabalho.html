@@ -800,6 +800,13 @@
             const acidente = document.getElementById('modal-acidente').value;
             const whatsapp = document.getElementById('modal-whatsapp').value;
 
+            // 1. DISPARAR A CONVERSÃO PARA O GOOGLE ADS (O código que você recebeu)
+            gtag('event', 'conversion', {
+                'send_to': 'AW-17833485449/A7OXCOai4dcbEInJ1bdC',
+                'value': 1.0,
+                'currency': 'BRL'
+            });
+
             // Montar a mensagem final
             let finalMessage = whatsappBaseMessage
                 .replace('[NOME]', nome)
@@ -896,6 +903,7 @@
 </body>
 
 </html>
+
 
 
 
