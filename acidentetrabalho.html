@@ -17,7 +17,7 @@
     <title>Acidente de Trabalho | Indenização e Pensão - Atendimento Nacional</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <meta name="description"
-        content="Advocacia epscializada trabalhista, acidente de trabalho, indenização, danos morais, danos materiais, pensão vitalícia.">
+        content="Advocacia epecialista trabalhista, acidente de trabalho, indenização, danos morais, danos materiais, pensão vitalícia.">
     <link rel="icon" href="image/favicon.ico"> <!-- colocar o favicon-->
 
     <!-- COMENTÁRIO: CSS PURO SERÁ INSERIDO AQUI (FASE 3) -->
@@ -777,17 +777,6 @@
             });
         });
 
-        // Chama a função na abertura do modal para garantir o estado inicial
-        function openModal() {
-            modal.style.display = 'flex';
-            document.body.style.overflow = 'hidden'; // Bloqueia o scroll
-            // Garante que o primeiro passo esteja ativo
-            modalSteps.forEach(step => step.classList.remove('active'));
-            document.querySelector(`[data-step="1"]`).classList.add('active');
-            currentStep = 1;
-
-        }
-
         document.getElementById('triagem-form').addEventListener('submit', (e) => {
             e.preventDefault();
             
@@ -891,4 +880,5 @@
 </body>
 
 </html>
+
 
