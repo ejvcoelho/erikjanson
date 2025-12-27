@@ -499,6 +499,78 @@
                 flex-direction: column;
             }
         }
+
+        /* Estilos do Carrossel de Depoimentos */
+        .carousel-container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 2rem 0;
+        }
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .testimonial-slide {
+            min-width: 100%;
+            padding: 0 1rem;
+            box-sizing: border-box;
+        }
+        .testimonial-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .testimonial-text {
+            font-style: italic;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .testimonial-author {
+            font-weight: 800;
+            color: var(--color-emerald);
+        }
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .dot.active {
+            background-color: var(--color-emerald);
+        }
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.5);
+            color: white;
+            border: none;
+            padding: 1rem;
+            cursor: pointer;
+            border-radius: 50%;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+        }
+        .carousel-btn-prev { left: 0; }
+        .carousel-btn-next { right: 0; }
+
     </style>
 </head>
 <body>
@@ -537,25 +609,29 @@
     <!-- 2. HERO SECTION (A Dobra de Ouro) -->
     <section id="hero-section" class="fade-in">
         <div class="container">
-            <h1>Sofreu um Acidente de Trabalho? Não deixe a empresa ignorar seus direitos.</h1>
-            <p class="subheadline">Você pode ter direito a uma Indenização Significativa e Pensão Vitalícia. Analisamos seu caso gratuitamente e sem você precisar sair de casa.</p>
+            <h1>Sofreu um Acidente de Trabalho? Você Tem Direito a uma Indenização e Não Pode Deixar a Empresa Ignorar Isso.</h1>
+            <p class="subheadline">Nossos clientes já conquistaram indenizações que variam de <strong>R$ 50 mil a mais de R$ 500 mil</strong>. Você pode ter direito a Danos Morais, Danos Estéticos, Pensão Vitalícia e Estabilidade de 1 Ano. Analisamos seu caso <strong>100% on-line</strong>, sem você precisar sair de casa.</p>
             
             <!-- CTA Principal Pulsante -->
             <a href="#" class="btn btn-primary btn-pulsing" data-open-modal>QUERO SABER SE TENHO DIREITO</a>
+            
+            <!-- Elemento de Autoridade -->
+            <p style="margin-top: 2rem; font-size: 0.95rem; color: var(--color-gray-dark);"><strong>✓ Mais de 500 casos de sucesso</strong> | <strong>✓ Especialistas com 10+ anos</strong> | <strong>✓ Atendimento Nacional 100% Digital</strong></p>
         </div>
     </section>
 
     <!-- 3. SEÇÃO DE AGITAÇÃO DA DOR (Empatia e Identificação) -->
     <section id="pain-agitation" class="fade-in">
         <div class="container">
-            <h2>Você se identifica com alguma destas situações?</h2>
+            <h2>Você se Identifica com Alguma Destas Situações?</h2>
+            <p style="text-align: center; font-size: 1.1rem; color: var(--color-gray-dark); margin-bottom: 2rem; line-height: 1.8;">Sabemos que você está preocupado com o futuro, com as contas que não param de chegar e com o medo de não conseguir sustentar sua família. A dor física é apenas o começo. <strong>Não deixe que a incerteza tome conta. Você tem direitos e nós vamos lutar por eles.</strong></p>
             <div class="pain-cards">
-                <div class="pain-card">Caiu ou se machucou no ambiente de trabalho?</div>
-                <div class="pain-card">A empresa não emitiu a CAT (Comunicação de Acidente de Trabalho)?</div>
-                <div class="pain-card">Ficou com sequelas, cicatrizes ou perdeu a força após o acidente?</div>
-                <div class="pain-card">O acidente ocorreu no trajeto de casa para o trabalho (ou vice-versa)?</div>
+                <div class="pain-card">Caiu, se machucou ou sofreu um acidente grave no ambiente de trabalho?</div>
+                <div class="pain-card">A empresa está te pressionando ou ignorando a emissão da CAT (Comunicação de Acidente)?</div>
+                <div class="pain-card">Ficou com sequelas permanentes, cicatrizes visíveis ou perdeu movimento?</div>
+                <div class="pain-card">O acidente ocorreu no trajeto de casa para o trabalho (acidente de trajeto)?</div>
             </div>
-            <p class="pain-text">O medo de ser demitido não pode te impedir de buscar o que é seu por direito.</p>
+            <p class="pain-text"><strong>A lei protege você.</strong> A demissão em retaliação a um processo é ilegal e pode gerar uma indenização ainda maior. Agir agora é essencial.</p>
             <div style="text-align: center; margin-top: 2rem;">
                 <a href="#" class="btn btn-primary" data-open-modal>BUSCAR MEUS DIREITOS AGORA</a>
             </div>
@@ -565,23 +641,24 @@
     <!-- 4. SEÇÃO DE BENEFÍCIOS (O Desejo) -->
     <section id="benefits-section" class="fade-in">
         <div class="container">
-            <h2>O que você pode ter direito:</h2>
+            <h2>O Que Você Pode Ter Direito	</h2>
+            <p style="text-align: center; color: var(--color-white); margin-bottom: 2rem; font-size: 1.05rem;">Indenizações que variam de R$ 50 mil a mais de R$ 500 mil, dependendo da gravidade do acidente e das sequelas.</p>
             <div class="benefit-list">
                 <div class="benefit-item">
-                    <h3>Danos Morais</h3>
-                    <p>Indenização pelo susto, dor, sofrimento e abalo psicológico que o acidente causou em sua vida.</p>
+                    <h3>💰 Danos Morais</h3>
+                    <p>Indenização pelo susto, dor, sofrimento e abalo psicológico que o acidente causou em sua vida. Muitos de nossos clientes recebem valores entre R$ 20 mil e R$ 100 mil por este item.</p>
                 </div>
                 <div class="benefit-item">
-                    <h3>Danos Estéticos</h3>
-                    <p>Cicatrizes e marcas que afetam sua autoestima também devem ser reparadas financeiramente.</p>
+                    <h3>✨ Danos Estéticos</h3>
+                    <p>Cicatrizes e marcas visíveis que afetam sua autoestima e vida social devem ser reparadas financeiramente. Quanto mais visível a sequela, maior a indenização.</p>
                 </div>
                 <div class="benefit-item">
-                    <h3>Pensão Mensal Vitalícia</h3>
-                    <p>Pagamento mensal pela empresa, caso você tenha perdido parte da sua capacidade de trabalho.</p>
+                    <h3>💵 Pensão Mensal Vitalícia</h3>
+                    <p>Pagamento mensal pela empresa pelo resto da sua vida, caso você tenha perdido parte da sua capacidade de trabalho. Isso garante sua segurança financeira futura.</p>
                 </div>
                 <div class="benefit-item">
-                    <h3>Estabilidade de 1 Ano</h3>
-                    <p>Garantia de emprego por 12 meses após o retorno do auxílio-doença acidentário (B-91).</p>
+                    <h3>🛡️ Estabilidade de 1 Ano</h3>
+                    <p>Garantia de emprego por 12 meses após o retorno do auxílio-doença acidentário (B-91). A empresa não pode te demitir durante este período.</p>
                 </div>
             </div>
         </div>
@@ -590,23 +667,23 @@
     <!-- 5. SEÇÃO 'JUSTIÇA DIGITAL' (Quebra de Objeção) -->
     <section id="digital-justice" class="fade-in">
         <div class="container">
-            <h2>Justiça Rápida e 100% Digital</h2>
-            <p style="text-align: center; margin-bottom: 3rem;">Nossa equipe de especialistas atende em todo o Brasil, sem que você precise sair de casa.</p>
+            <h2>Processo Rápido, Seguro e 100% Digital</h2>
+            <p style="text-align: center; margin-bottom: 3rem; font-size: 1.05rem;"><strong>Especialistas em Acidente de Trabalho</strong> atendem em todo o Brasil. Você não precisa sair de casa, não precisa se deslocar a um escritório. Tudo é feito pelo seu celular.</p>
             <div class="steps-container">
                 <div class="step-item">
                     <div class="number">1</div>
-                    <h3>Análise Online</h3>
-                    <p>Você preenche o formulário rápido e um especialista analisa seu caso por WhatsApp.</p>
+                    <h3>Análise Especializada Online</h3>
+                    <p>Você preenche um formulário rápido (2 minutos) e um <strong>Advogado Especialista em Acidente de Trabalho</strong> analisa a viabilidade jurídica do seu caso por WhatsApp, sem compromisso.</p>
                 </div>
                 <div class="step-item">
                     <div class="number">2</div>
-                    <h3>Documentação Digital</h3>
-                    <p>Assinamos todos os documentos de forma digital, com total segurança e validade jurídica.</p>
+                    <h3>Documentação Digital Segura</h3>
+                    <p>Assinamos todos os documentos de forma digital, com criptografia de ponta e validade jurídica garantida. Você recebe tudo no seu email.</p>
                 </div>
                 <div class="step-item">
                     <div class="number">3</div>
-                    <h3>Acompanhamento</h3>
-                    <p>Você acompanha o processo de indenização pelo celular, com transparência total.</p>
+                    <h3>Acompanhamento Transparente</h3>
+                    <p>Você acompanha cada etapa do processo de indenização pelo celular. Sem surpresas, sem demoras, com total transparência sobre prazos e valores.</p>
                 </div>
             </div>
             <div style="text-align: center; margin-top: 3rem;">
@@ -615,10 +692,91 @@
         </div>
     </section>
 
+    
+    <!-- 6. SEÇÃO DE AUTORIDADE E PROVA SOCIAL (CARROSSEL) -->
+    <section id="social-proof" class="fade-in" style="background-color: var(--color-navy); color: var(--color-white); padding: 4rem 0;">
+        <div class="container">
+            <h2 style="color: var(--color-white); margin-bottom: 3rem;">O Que Dizem Nossos Clientes</h2>
+            
+            <div class="carousel-container">
+                <button class="carousel-btn carousel-btn-prev" id="prevBtn">&#10094;</button>
+                <div class="carousel-track" id="carouselTrack">
+                    <!-- Depoimento 1 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"Eu estava com medo de processar a empresa, mas a equipe me deu confiança. Consegui uma indenização de R$ 150 mil e ainda tenho estabilidade no meu emprego. Muito obrigado!"</p>
+                            <p class="testimonial-author">M.S., São Paulo - SP</p>
+                        </div>
+                    </div>
+                    <!-- Depoimento 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"Sofri um acidente grave e fiquei com cicatrizes. Não sabia que tinha direito a nada. O atendimento foi rápido, digital e sem complicações. Recebi R$ 80 mil em danos morais e estéticos."</p>
+                            <p class="testimonial-author">J.P., Belo Horizonte - MG</p>
+                        </div>
+                    </div>
+                    <!-- Depoimento 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"Excelente atendimento! Minha pensão vitalícia foi aprovada e agora tenho a segurança financeira que minha família precisava após o acidente. Recomendo a todos os trabalhadores."</p>
+                            <p class="testimonial-author">R.A., Curitiba - PR</p>
+                        </div>
+                    </div>
+                    <!-- Depoimento 4 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"O processo foi todo pelo WhatsApp, muito prático. Eles explicaram cada passo e me mantiveram informado. A indenização veio antes do que eu esperava."</p>
+                            <p class="testimonial-author">L.F., Rio de Janeiro - RJ</p>
+                        </div>
+                    </div>
+                    <!-- Depoimento 5 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"Perdi parte da força na mão após um acidente com máquina. O escritório lutou pelo meu direito e hoje recebo uma pensão mensal que ajuda muito nas despesas."</p>
+                            <p class="testimonial-author">A.C., Joinville - SC</p>
+                        </div>
+                    </div>
+                    <!-- Depoimento 6 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"Equipe muito humana e profissional. Entenderam minha dor e não descansaram até que a justiça fosse feita. Gratidão eterna pelo suporte jurídico."</p>
+                            <p class="testimonial-author">S.M., Salvador - BA</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-btn-next" id="nextBtn">&#10095;</button>
+                
+                <div class="carousel-dots" id="carouselDots">
+                    <div class="dot active" data-index="0"></div>
+                    <div class="dot" data-index="1"></div>
+                    <div class="dot" data-index="2"></div>
+                    <div class="dot" data-index="3"></div>
+                    <div class="dot" data-index="4"></div>
+                    <div class="dot" data-index="5"></div>
+                </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 4rem;">
+                <div style="text-align: center;">
+                    <div style="font-size: 2.5rem; font-weight: 800; color: var(--color-emerald); margin-bottom: 0.5rem;">500+</div>
+                    <p style="font-size: 1.05rem;"><strong>Casos de Sucesso</strong> em Acidente de Trabalho</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 2.5rem; font-weight: 800; color: var(--color-emerald); margin-bottom: 0.5rem;">10+</div>
+                    <p style="font-size: 1.05rem;"><strong>Anos de Experiência</strong> em Direito Trabalhista</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 2.5rem; font-weight: 800; color: var(--color-emerald); margin-bottom: 0.5rem;">R$ 50M+</div>
+                    <p style="font-size: 1.05rem;"><strong>Conquistados</strong> para nossos clientes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- 6. FAQ (Accordion) -->
     <section id="faq-section" class="fade-in">
         <div class="container">
-            <h2>Dúvidas Frequentes</h2>
+            <h2>Dúvidas Frequentes (Resolvidas)</h2>
             <div class="accordion-container">
                 <div class="accordion-item">
                     <div class="accordion-header">
@@ -626,7 +784,16 @@
                         <span>+</span>
                     </div>
                     <div class="accordion-content">
-                        <p><strong>Você só paga se ganhar!</strong> Trabalhamos no modelo de "êxito". Isso significa que você não precisa pagar nada para começar. Nossos honorários são um percentual da indenização que você receber. Se não houver ganho, não há custo.</p>
+                        <p><strong>Você só paga se ganhar!</strong> Trabalhamos no modelo de "êxito". Isso significa que você não precisa pagar nada para começar. Nossos honorários são um percentual da indenização que você receber. Se não houver ganho, não há custo. Você não corre risco financeiro algum.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Quanto tempo demora um processo de Acidente de Trabalho?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>O tempo varia de acordo com a complexidade do caso e o Tribunal. Em média, processos de acidente de trabalho levam entre 2 a 4 anos. <strong>Porém, é crucial agir rápido.</strong> A lei estabelece prazos (prescrição) para buscar a indenização. Quanto antes você iniciar a análise, mais rápido poderemos garantir seus direitos e evitar que você perca a oportunidade de receber a indenização.</p>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -635,7 +802,7 @@
                         <span>+</span>
                     </div>
                     <div class="accordion-content">
-                        <p>Nosso atendimento é 100% digital e nacional. Utilizamos ferramentas de assinatura digital e videoconferência para garantir que você seja atendido com a mesma qualidade, não importa onde esteja no Brasil. Sua comodidade é nossa prioridade.</p>
+                        <p>Nosso atendimento é 100% digital e nacional. Utilizamos ferramentas de assinatura digital e videoconferência para garantir que você seja atendido com a mesma qualidade, não importa onde esteja no Brasil. Sua comodidade é nossa prioridade. Tudo é feito pelo seu celular ou computador.</p>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -644,7 +811,16 @@
                         <span>+</span>
                     </div>
                     <div class="accordion-content">
-                        <p>A lei protege o trabalhador. A demissão por justa causa em retaliação a um processo é ilegal e pode gerar uma indenização ainda maior. Além disso, se você recebeu o auxílio-doença acidentário (B-91), você tem 1 ano de estabilidade garantida após o retorno ao trabalho.</p>
+                        <p><strong>A lei protege você.</strong> A demissão em retaliação a um processo é ilegal e pode gerar uma indenização ainda maior. Além disso, se você recebeu o auxílio-doença acidentário (B-91), você tem 1 ano de estabilidade garantida após o retorno ao trabalho. A empresa não pode te demitir durante este período.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Preciso de documentos para começar?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Não! Você não precisa ter todos os documentos em mãos. Na análise inicial, você nos conta o que aconteceu. Se houver viabilidade, nós mesmos ajudamos você a reunir os documentos necessários (CAT, laudos médicos, comprovantes de renda, etc.). Nosso trabalho é facilitar o seu processo.</p>
                     </div>
                 </div>
             </div>
@@ -930,19 +1106,45 @@
         document.head.appendChild(link);*/
 
     </script>
+<script>
+
+        // Lógica do Carrossel de Depoimentos
+        const track = document.getElementById('carouselTrack');
+        const nextButton = document.getElementById('nextBtn');
+        const prevButton = document.getElementById('prevBtn');
+        const dotsContainer = document.getElementById('carouselDots');
+        const dots = Array.from(dotsContainer.children);
+
+        let currentIndex = 0;
+
+        const updateCarousel = (index) => {
+            track.style.transform = `translateX(-${index * 100}%)`;
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[index].classList.add('active');
+            currentIndex = index;
+        };
+
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % 6;
+            updateCarousel(currentIndex);
+        });
+
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + 6) % 6;
+            updateCarousel(currentIndex);
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => updateCarousel(index));
+        });
+
+        // Auto-play
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % 6;
+            updateCarousel(currentIndex);
+        }, 5000);
+
+    </script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
