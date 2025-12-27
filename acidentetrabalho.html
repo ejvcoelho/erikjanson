@@ -25,6 +25,9 @@
 
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" media="print" onload="this.media='all'"> -->
 
+	<!-- antecipa o carregamento do logo  -->
+	<link rel="preload" as="image" href="logo-pequena-s-fundo.png">
+	
     <!-- COMENTÁRIO: CSS PURO SERÁ INSERIDO AQUI (FASE 3) -->
     <style>
 
@@ -488,7 +491,7 @@
             <div class="logo-placeholder">
                 <!-- COMENTÁRIO: Substitua o texto abaixo pelo seu logo (imagem ou texto) -->
                 <!-- <span class="logo-text">ERIK JANSON & ASSOCIADOS</span>  -->
-		            <img src="logo-pequena-s-fundo.png" alt="Erik Janson & Associados Logo" width="150" height="60" decoding="async">
+		            <img src="logo-pequena-s-fundo.png" alt="Erik Janson & Associados Logo" width="150" height="60" fetchpriority="high" decoding="async">
             </div>
             <div class="header-info">
                 <span class="seal">Atendimento Nacional</span>
@@ -904,6 +907,7 @@
 </body>
 
 </html>
+
 
 
 
