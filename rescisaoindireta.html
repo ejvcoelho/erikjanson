@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rescisão Indireta | Advogado Trabalhista Especializado - Atendimento Nacional</title>
+    <meta name="description" content="Advocacia especialista em Rescisão Indireta do Contrato de Trabalho. Atendimento jurídico contínuo, acompanhamento estratégico e garantia dos seus direitos trabalhistas.">
+    <link rel="icon" href="image/lp-favicon.v1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        .icon-whatsapp {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            src: url('/fontes/inter-400.v1.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            src: url('/fontes/inter-600.v1.woff2') format('woff2');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            src: url('/fontes/inter-800.v1.woff2') format('woff2');
+            font-weight: 800;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* Paleta de Cores */
+        :root {
+            --color-navy: #0f172a;
+            --color-emerald: #10b981;
+            --color-soft-red: #ef4444;
+            --color-white: #ffffff;
+            --color-gray-light: #f1f5f9;
+            --color-gray-dark: #64748b;
+        }
+
+        /* Reset Básico e Tipografia */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--color-navy);
+            background-color: var(--color-white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        h1, h2, h3 {
+            line-height: 1.2;
+            font-weight: 800;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* Botões de Ação (CTA) */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 800;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--color-emerald);
+            color: var(--color-white);
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.5);
+        }
+
+        .btn-primary:hover {
+            background-color: #0d946d;
+        }
+
+        /* Header */
+        #main-header {
+            background-color: var(--color-navy);
+            color: var(--color-white);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        .header-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .seal {
+            background-color: var(--color-soft-red);
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.25rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .whatsapp-float-btn {
+            display: none;
+        }
+
+        /* Hero Section */
+        #hero-section {
+            background-color: var(--color-gray-light);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        #hero-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        #hero-section .subheadline {
+            font-size: 1.25rem;
+            color: var(--color-gray-dark);
+            margin-bottom: 2rem;
+        }
+
+        /* Efeito Pulsante (CRO) */
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 20px rgba(16, 185, 129, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+            }
+        }
+
+        .btn-pulsing {
+            animation: pulse 2s infinite;
+            font-size: 1.2rem;
+            padding: 1.2rem 2.5rem;
+        }
+
+        /* Seções de Conteúdo */
+        section {
+            padding: 3rem 0;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        /* Seção de Agitação da Dor */
+        #pain-agitation {
+            background-color: var(--color-white);
+        }
+
+        .pain-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .pain-card {
+            background-color: var(--color-gray-light);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            font-weight: 600;
+            border-left: 5px solid var(--color-soft-red);
+        }
+
+        .pain-text {
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-soft-red);
+            padding: 1rem;
+            border: 1px dashed var(--color-soft-red);
+            border-radius: 0.5rem;
+        }
+
+        /* Seção de Benefícios */
+        #benefits-section {
+            background-color: var(--color-navy);
+            color: var(--color-white);
+        }
+
+        .benefit-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .benefit-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+        }
+
+        .benefit-item h3 {
+            color: var(--color-emerald);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Seção de Processo */
+        #process-section {
+            background-color: var(--color-gray-light);
+        }
+
+        .steps-container {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            gap: 1rem;
+        }
+
+        .step-item {
+            flex: 1;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            background-color: var(--color-white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .step-item .number {
+            font-size: 2rem;
+            color: var(--color-emerald);
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+
+        /* FAQ */
+        #faq-section {
+            background-color: var(--color-white);
+        }
+
+        .accordion-item {
+            border: 1px solid #ddd;
+            margin-bottom: 0.5rem;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+
+        .accordion-header {
+            background-color: var(--color-navy);
+            color: var(--color-white);
+            padding: 1rem;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accordion-content {
+            padding: 1rem;
+            background-color: var(--color-gray-light);
+            display: none;
+        }
+
+        /* Footer */
+        #main-footer {
+            background-color: var(--color-navy);
+            color: var(--color-gray-dark);
+            padding: 2rem 0;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+        #main-footer a {
+            color: var(--color-gray-dark);
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        #main-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            margin-top: 1rem;
+        }
+
+        /* Modal de Triagem */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+
+        .modal-overlay.show {
+            display: flex;
+        }
+
+        .modal-content {
+            background-color: var(--color-white);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            max-width: 500px;
+            width: 90%;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal-content h2 {
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 0.25rem;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .modal-buttons button {
+            flex: 1;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 0.25rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .btn-submit {
+            background-color: var(--color-emerald);
+            color: var(--color-white);
+        }
+
+        .btn-cancel {
+            background-color: var(--color-gray-light);
+            color: var(--color-navy);
+        }
+
+        /* Exit Intent Pop-up */
+        #exit-popup {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--color-navy);
+            color: var(--color-white);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            display: none;
+            z-index: 1999;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+        }
+
+        #exit-popup a {
+            color: var(--color-emerald);
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            display: inline-block;
+        }
+
+        /* Fade-in Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .header-info {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            #hero-section h1 {
+                font-size: 1.8rem;
+            }
+
+            .steps-container {
+                flex-direction: column;
+            }
+
+            .whatsapp-float-btn {
+                display: block;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                width: 60px;
+                height: 60px;
+                background-color: var(--color-emerald);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                box-shadow: 0 4px 15px rgba(16, 185, 129, 0.5);
+                z-index: 999;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-text">Rescisão Indireta</div>
+                <div class="header-info">
+                    <span class="seal">Especialista</span>
+                    <button class="btn btn-primary" onclick="openModal()">Fale Agora</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero-section">
+        <div class="container">
+            <h1>Encerre seu contrato de trabalho com dignidade e receba tudo que é seu por direito.</h1>
+            <p class="subheadline">Atendimento jurídico especializado, acompanhamento contínuo e a clareza que você precisa para uma rescisão indireta justa e tranquila.</p>
+            <button class="btn btn-primary btn-pulsing" onclick="openModal()">Solicitar Análise Gratuita</button>
+        </div>
+    </section>
+
+    <!-- Seção de Agitação da Dor -->
+    <section id="pain-agitation">
+        <div class="container fade-in">
+            <h2>Você não precisa aceitar calado as irregularidades do seu empregador.</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">O problema é justamente não saber que você tem o direito de agir antes que a situação se torne insustentável.</p>
+            <div class="pain-cards">
+                <div class="pain-card fade-in">
+                    <strong>Falta de Previsibilidade</strong>
+                    <p>Você vive na incerteza sobre o futuro do seu emprego.</p>
+                </div>
+                <div class="pain-card fade-in">
+                    <strong>Ambiente Tóxico</strong>
+                    <p>Assédio, descumprimento de direitos e ilegalidades contínuas.</p>
+                </div>
+                <div class="pain-card fade-in">
+                    <strong>Medo de Perder Direitos</strong>
+                    <p>Sem orientação, você pode perder tudo ao tentar sair.</p>
+                </div>
+                <div class="pain-card fade-in">
+                    <strong>Falta de Acompanhamento Real</strong>
+                    <p>Você precisa de um jurídico estratégico para proteger seus interesses.</p>
+                </div>
+            </div>
+            <div class="pain-text fade-in">
+                A maioria dos problemas trabalhistas não nasce grande. Eles crescem no silêncio do seu dia a dia, até se tornarem insuportáveis.
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Benefícios -->
+    <section id="benefits-section">
+        <div class="container">
+            <h2 style="color: var(--color-white);">Nossa Solução: Acompanhamento Jurídico Contínuo e Estratégico</h2>
+            <div class="benefit-list fade-in">
+                <div class="benefit-item">
+                    <h3>✓ Diagnóstico Detalhado</h3>
+                    <p>Análise completa do seu caso para identificar as bases legais para a Rescisão Indireta.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>✓ Plano de Ação Personalizado</h3>
+                    <p>Estratégia jurídica sob medida para proteger seus interesses e maximizar seus direitos.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>✓ Atendimento Recorrente</h3>
+                    <p>Orientação clara e suporte contínuo em cada etapa do processo, eliminando a ansiedade.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>✓ Suporte e Ajustes</h3>
+                    <p>Acompanhamento da evolução da sua situação, com ajustes estratégicos conforme necessário.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Processo -->
+    <section id="process-section">
+        <div class="container">
+            <h2>Como Funciona: Seu Atendimento Passo a Passo</h2>
+            <div class="steps-container fade-in">
+                <div class="step-item">
+                    <div class="number">1</div>
+                    <h3>Contato Inicial</h3>
+                    <p>Você entra em contato pelo WhatsApp. Nossa equipe responde em até 2 horas úteis.</p>
+                </div>
+                <div class="step-item">
+                    <div class="number">2</div>
+                    <h3>Análise e Reunião</h3>
+                    <p>Agendamos uma reunião com o advogado especialista para análise detalhada.</p>
+                </div>
+                <div class="step-item">
+                    <div class="number">3</div>
+                    <h3>Estratégia e Ação</h3>
+                    <p>Apresentamos o plano jurídico. Após aprovação, iniciamos o processo.</p>
+                </div>
+                <div class="step-item">
+                    <div class="number">4</div>
+                    <h3>Acompanhamento Contínuo</h3>
+                    <p>Você recebe atualizações periódicas e tem canal direto para dúvidas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq-section">
+        <div class="container fade-in">
+            <h2>Perguntas Frequentes</h2>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>A rescisão indireta serve para qualquer tipo de irregularidade?</span>
+                    <span>+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Não para qualquer tipo, mas para irregularidades graves e contínuas previstas na CLT (como atraso de salário, assédio moral, descumprimento de obrigações). Faremos uma análise detalhada para confirmar se seu caso se enquadra legalmente.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Qual o tempo médio para resolver um processo?</span>
+                    <span>+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>O tempo varia de acordo com a complexidade e a vara do trabalho. Nosso foco é na estratégia e previsibilidade. Desde o início, você terá uma estimativa clara e será atualizado constantemente.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Posso ser demitido por justa causa ao entrar com rescisão indireta?</span>
+                    <span>+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Não. A rescisão indireta é um direito do trabalhador. Nossa orientação é estratégica para garantir que seus direitos sejam protegidos durante todo o processo.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Quais são os custos envolvidos?</span>
+                    <span>+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Nossos honorários são transparentes e discutidos abertamente na primeira reunião. Trabalhamos com um modelo que se alinha ao seu sucesso, sem surpresas.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>E se eu não tiver todas as provas no início?</span>
+                    <span>+</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Não se preocupe. Nosso trabalho começa com orientação sobre como coletar e organizar as provas necessárias de forma legal e segura. Muitos documentos podem ser obtidos durante o processo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="container">
+            <p>&copy; 2024 Rescisão Indireta - Advocacia Especializada. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+                <a href="tel:XX-XXXX-XXXX">Telefone: (XX) XXXX-XXXX</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Triagem -->
+    <div class="modal-overlay" id="triagem-modal">
+        <div class="modal-content">
+            <h2>Análise Gratuita do Seu Caso</h2>
+            <form id="triagem-form">
+                <div class="form-group">
+                    <label for="modal-nome">Nome Completo</label>
+                    <input type="text" id="modal-nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="modal-situacao">Qual é sua situação?</label>
+                    <select id="modal-situacao" name="situacao" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="Atraso de salário">Atraso de salário</option>
+                        <option value="Assédio moral">Assédio moral</option>
+                        <option value="Descumprimento de direitos">Descumprimento de direitos</option>
+                        <option value="Ambiente insalubre">Ambiente insalubre</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="modal-whatsapp">WhatsApp para Contato</label>
+                    <input type="tel" id="modal-whatsapp" name="whatsapp" required>
+                </div>
+                <div class="modal-buttons">
+                    <button type="submit" class="btn-submit">Enviar para WhatsApp</button>
+                    <button type="button" class="btn-cancel" onclick="closeModal()">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Exit Intent Pop-up -->
+    <div id="exit-popup">
+        <p><strong>Espera aí!</strong> Você está saindo sem conhecer seus direitos? Fale com um especialista em Rescisão Indireta.</p>
+        <a href="#" onclick="openModal(); return false;">Quero uma análise gratuita</a>
+    </div>
+
+    <!-- Botão WhatsApp Flutuante (Mobile) -->
+    <div class="whatsapp-float-btn" onclick="openModal()"></div>
+
+    <script>
+        // Configuração do WhatsApp
+        const whatsappNumber = '55XXXXXXXXXX'; // Substitua pelo número real
+        const whatsappUrlBase = 'https://wa.me/';
+        const whatsappBaseMessage = 'Olá! Gostaria de uma análise gratuita sobre meu caso de Rescisão Indireta.\n\nNome: [NOME]\nSituação: [SITUACAO]\nWhatsApp: [WHATSAPP]';
+
+        // Parâmetros UTM (se houver)
+        const utmParams = {};
+
+        // 1. Funções do Modal
+        const modal = document.getElementById('triagem-modal');
+
+        function openModal() {
+            modal.classList.add('show');
+        }
+
+        function closeModal() {
+            modal.classList.remove('show');
+        }
+
+        // Fechar modal ao clicar fora
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        // 2. Envio do Formulário
+        document.getElementById('triagem-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const nome = document.getElementById('modal-nome').value;
+            const situacao = document.getElementById('modal-situacao').value;
+            const whatsapp = document.getElementById('modal-whatsapp').value;
+
+            // Montar a mensagem final
+            let finalMessage = whatsappBaseMessage
+                .replace('[NOME]', nome)
+                .replace('[SITUACAO]', situacao)
+                .replace('[WHATSAPP]', whatsapp);
+
+            // Adicionar parâmetros UTM à mensagem
+            let utmString = '';
+            for (const key in utmParams) {
+                utmString += `\n${key}: ${utmParams[key]}`;
+            }
+            if (utmString) {
+                finalMessage += `\n\n--- Dados da Campanha ---\n${utmString}`;
+            }
+
+            // Redirecionar para o WhatsApp
+            const encodedMessage = encodeURIComponent(finalMessage);
+            const whatsappLink = `${whatsappUrlBase}${whatsappNumber}&text=${encodedMessage}`;
+
+            window.open(whatsappLink, '_blank');
+            closeModal();
+        });
+
+        // 3. Exit Intent Pop-up
+        let exitIntentShown = false;
+
+        document.addEventListener('mouseout', (e) => {
+            if (e.clientY < 50 && !exitIntentShown && modal.style.display !== 'flex') {
+                document.getElementById('exit-popup').style.display = 'block';
+                exitIntentShown = true;
+            }
+        });
+
+        document.querySelector('#exit-popup a').addEventListener('click', () => {
+            document.getElementById('exit-popup').style.display = 'none';
+        });
+
+        // 4. Animações de Scroll (Fade-in)
+        const fadeInElements = document.querySelectorAll('.fade-in');
+
+        function checkFadeIn() {
+            fadeInElements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.8) {
+                    el.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkFadeIn);
+        window.addEventListener('load', checkFadeIn);
+
+        // 5. Funcionalidade do FAQ (Accordion)
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const parent = header.parentElement;
+                const icon = header.querySelector('span:last-child');
+
+                document.querySelectorAll('.accordion-item').forEach(item => {
+                    if (item !== parent) {
+                        item.querySelector('.accordion-content').style.display = 'none';
+                        item.querySelector('.accordion-header span:last-child').textContent = '+';
+                    }
+                });
+
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                    icon.textContent = '+';
+                } else {
+                    content.style.display = 'block';
+                    icon.textContent = '-';
+                }
+            });
+        });
+
+        // Ícone SVG do WhatsApp
+        const whatsappSvg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width:20px;height:20px;fill:currentColor;display:inline-block;vertical-align:middle;margin-right:8px;"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>';
+
+        document.querySelector('.whatsapp-float-btn').innerHTML = whatsappSvg;
+        document.querySelector('#main-header .btn-primary').innerHTML = whatsappSvg + ' Fale Agora';
+    </script>
+
+</body>
+
+</html>
