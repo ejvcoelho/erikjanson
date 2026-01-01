@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rescisão Indireta 1.0</title>
+    <title>Rescisão Indireta</title>
     <meta name="description" content="Advocacia especialista em Rescisão Indireta do Contrato de Trabalho. Atendimento jurídico contínuo, acompanhamento estratégico e garantia dos seus direitos trabalhistas.">
     <link rel="icon" href="image/lp-favicon.v1.png">
     <!-- Font Awesome – carregamento NÃO bloqueante -->
@@ -416,32 +416,7 @@
             color: var(--color-navy);
         }
 
-        /* Exit Intent Pop-up */
-        #exit-popup {
-            position: fixed;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: var(--color-navy);
-            color: var(--color-white);
-            padding: 1.5rem;
-            border-radius: 0.5rem;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-            display: none;
-            z-index: 1999;
-            max-width: 600px;
-            width: 90%;
-            text-align: center;
-        }
-
-        #exit-popup a {
-            color: var(--color-emerald);
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 1rem;
-            display: inline-block;
-        }
-
+       
         /* Fade-in Animation */
         .fade-in {
             opacity: 0;
@@ -693,12 +668,6 @@
         </div>
     </div>
 
-    <!-- Exit Intent Pop-up -->
-    <div id="exit-popup">
-        <p><strong>Espera aí!</strong> Você está saindo sem conhecer seus direitos? Fale com um especialista em Rescisão Indireta.</p>
-        <a href="#" onclick="openModal(); return false;">Quero uma análise gratuita</a>
-    </div>
-
     <!-- Botão WhatsApp Flutuante (Mobile) -->
     <div class="whatsapp-float-btn" onclick="openModal()"></div>
 
@@ -760,20 +729,7 @@
             closeModal();
         });
 
-        // 3. Exit Intent Pop-up
-        let exitIntentShown = false;
-
-        document.addEventListener('mouseout', (e) => {
-            if (e.clientY < 50 && !exitIntentShown && modal.style.display !== 'flex') {
-                document.getElementById('exit-popup').style.display = 'block';
-                exitIntentShown = true;
-            }
-        });
-
-        document.querySelector('#exit-popup a').addEventListener('click', () => {
-            document.getElementById('exit-popup').style.display = 'none';
-        });
-
+     
         // 4. Animações de Scroll (Fade-in)
         const fadeInElements = document.querySelectorAll('.fade-in');
 
