@@ -10,9 +10,28 @@
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-	
-	  gtag('config', 'G-Y58B1R0E6R');
+		gtag('config', 'G-Y58B1R0E6R');   // GA4
+  		gtag('config', 'AW-17833485449'); // Google Ads
 	</script>
+
+  <!-- Event snippet for Enviar formulário de lead -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17833485449/A7OXCOai4dcbEInJ1bdC',
+          'value': 1.0,
+          'currency': 'BRL',
+          'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+	
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1057,7 +1076,7 @@
         // Configuração do WhatsApp
         const whatsappNumber = '5527998518149'; // Substitua pelo número real
         const whatsappUrlBase = 'https://api.whatsapp.com/send?phone=';
-        const whatsappBaseMessage = 'Olá! Gostaria de uma análise gratuita sobre meu caso de Rescisão Indireta.\n\nNome: [NOME]\nSituação: [SITUACAO]\nWhatsApp: [WHATSAPP]';
+        const whatsappBaseMessage = 'Olá! Gostaria de uma análise sobre meu caso de Rescisão Indireta.\n\nNome: [NOME]\nSituação: [SITUACAO]\nWhatsApp: [WHATSAPP]';
 
         // Parâmetros UTM (se houver)
         const utmParams = {};
@@ -1082,34 +1101,36 @@
 
         // 2. Envio do Formulário
         document.getElementById('triagem-form').addEventListener('submit', (e) => {
-            e.preventDefault();
+    e.preventDefault();
 
-            const nome = document.getElementById('modal-nome').value;
-            const situacao = document.getElementById('modal-situacao').value;
-            const whatsapp = document.getElementById('modal-whatsapp').value;
+    const nome = document.getElementById('modal-nome').value;
+    const situacao = document.getElementById('modal-situacao').value;
+    const whatsapp = document.getElementById('modal-whatsapp').value;
 
-            // Montar a mensagem final
-            let finalMessage = whatsappBaseMessage
-                .replace('[NOME]', nome)
-                .replace('[SITUACAO]', situacao)
-                .replace('[WHATSAPP]', whatsapp);
+    let finalMessage = whatsappBaseMessage
+        .replace('[NOME]', nome)
+        .replace('[SITUACAO]', situacao)
+        .replace('[WHATSAPP]', whatsapp);
 
-            // Adicionar parâmetros UTM à mensagem
-            let utmString = '';
-            for (const key in utmParams) {
-                utmString += `\n${key}: ${utmParams[key]}`;
-            }
-            if (utmString) {
-                finalMessage += `\n\n--- Dados da Campanha ---\n${utmString}`;
-            }
+    let utmString = '';
+    for (const key in utmParams) {
+        utmString += `\n${key}: ${utmParams[key]}`;
+    }
+    if (utmString) {
+        finalMessage += `\n\n--- Dados da Campanha ---\n${utmString}`;
+    }
 
-            // Redirecionar para o WhatsApp
-            const encodedMessage = encodeURIComponent(finalMessage);
-            const whatsappLink = `${whatsappUrlBase}${whatsappNumber}&text=${encodedMessage}`;
+    const encodedMessage = encodeURIComponent(finalMessage);
+    const whatsappLink = `${whatsappUrlBase}${whatsappNumber}&text=${encodedMessage}`;
 
-            window.open(whatsappLink, '_blank');
-            closeModal();
-        });
+    // 🔥 REGISTRA A CONVERSÃO NO GOOGLE ADS
+    gtag_report_conversion();
+
+    // Abre o WhatsApp
+    window.open(whatsappLink, '_blank');
+
+    closeModal();
+	});
 
      
         // 4. Animações de Scroll (Fade-in)
