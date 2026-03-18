@@ -12,6 +12,26 @@
   gtag('config', 'G-Y58B1R0E6R');
 </script>
 
+	<!-- Event snippet for Enviar formulário de lead conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17833485449/A7OXCOai4dcbEInJ1bdC',
+      'value': 1.0,
+      'currency': 'BRL',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+	
 	
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1058,7 +1078,9 @@
             const encodedMessage = encodeURIComponent(finalMessage);
             const whatsappLink = `${whatsappUrlBase}${whatsappNumber}&text=${encodedMessage}`;
 
-            window.open(whatsappLink, '_blank');
+             // 👉 Chamada da conversão + redirecionamento
+    		gtag_report_conversion(whatsappLink);
+
             closeModal();
         });
 
