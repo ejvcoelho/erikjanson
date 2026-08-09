@@ -1,419 +1,422 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17833485449">
-</script>
+
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y58B1R0E6R"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
-  gtag('config', 'AW-17833485449');
+  gtag('config', 'G-Y58B1R0E6R');
 </script>
 
-    
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17833485449/A7OXCOai4dcbEInJ1bdC',
+      'value': 1.0,
+      'currency': 'BRL',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ERIK JANSON ASSESSORIA JURÍDICA</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="description"
-        content="Advocacia epscializada empresarial, trabalhista, administrativa, licitações e contratos administrativos, Tribunais de Conta. Assessoria consultiva, preventiva e contenciosa. Soluções personalizadas para sua necessidade.">
-    <link rel="icon" href="image/favicon.ico"> <!-- colocar o favicon-->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Erik Janson — Advocacia Trabalhista | Espírito Santo</title>
+    <meta name="description" content="Advocacia trabalhista em todo o Espírito Santo. Mais de 19 anos de experiência em Direito do Trabalho, com atuação nos dois lados da mesa.">
+    <link rel="icon" href="image/lp-favicon.v1.png">
 
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </noscript>
 
-    <!-- Código do ReCaptcha-->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-     <!-- ---------------------->
+    <style>
+        @font-face {
+            font-family: 'Inter';
+            src: url('/fontes/inter-400.v1.woff2') format('woff2');
+            font-weight: 400; font-style: normal; font-display: swap;
+        }
+        @font-face {
+            font-family: 'Inter';
+            src: url('/fontes/inter-600.v1.woff2') format('woff2');
+            font-weight: 600; font-style: normal; font-display: swap;
+        }
+        @font-face {
+            font-family: 'Inter';
+            src: url('/fontes/inter-800.v1.woff2') format('woff2');
+            font-weight: 800; font-style: normal; font-display: swap;
+        }
 
+        :root {
+            --color-navy: #0f172a;
+            --color-navy-soft: #1e293b;
+            --color-emerald: #10b981;
+            --color-emerald-dark: #0d946d;
+            --color-gold: #b8923f;
+            --color-white: #ffffff;
+            --color-gray-light: #f1f5f9;
+            --color-gray-dark: #64748b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--color-navy);
+            background-color: var(--color-white);
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+        h1, h2, h3 { line-height: 1.2; font-weight: 800; }
+        p { margin-bottom: 1rem; }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            transition: background-color .2s ease, transform .2s ease;
+            cursor: pointer;
+            border: none;
+        }
+        .btn-primary {
+            background-color: var(--color-emerald);
+            color: var(--color-white);
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.35);
+        }
+        .btn-primary:hover { background-color: var(--color-emerald-dark); transform: translateY(-1px); }
+        .btn-outline {
+            border: 1.5px solid var(--color-navy);
+            color: var(--color-navy);
+        }
+
+        /* ===== HEADER ===== */
+        #main-header {
+            background-color: var(--color-navy);
+            color: var(--color-white);
+            padding: 1rem 0;
+            position: sticky; top: 0; z-index: 1000;
+        }
+        .header-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo-text { font-size: 1.4rem; font-weight: 800; color: var(--color-white); }
+        .logo-text span { color: var(--color-emerald); }
+        .header-nav { display: flex; align-items: center; gap: 2rem; }
+        .header-nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.95rem; }
+        .header-nav a:hover { color: var(--color-white); }
+        .seal-tag {
+            font-family: monospace;
+            font-size: 0.72rem; letter-spacing: 0.06em;
+            color: var(--color-emerald);
+            border: 1px solid rgba(16,185,129,0.4);
+            padding: 0.25rem 0.6rem; border-radius: 0.25rem;
+        }
+
+        /* ===== HERO ===== */
+        #hero-section { background-color: var(--color-gray-light); padding: 4.5rem 0; }
+        .hero-container { display: flex; align-items: center; gap: 3rem; }
+        .hero-text { flex: 1.1; }
+        .hero-image { flex: 0.9; text-align: center; }
+        .hero-image img { max-width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
+        #hero-section h1 { font-size: 2.6rem; margin-bottom: 1rem; color: var(--color-navy); }
+        #hero-section .subheadline { font-size: 1.15rem; color: var(--color-gray-dark); margin-bottom: 2rem; max-width: 540px; }
+        .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+        /* ===== DIFERENCIAIS ===== */
+        #diferenciais-section { background-color: var(--color-navy); color: var(--color-white); padding: 4rem 0; }
+        #diferenciais-section .eyebrow { color: var(--color-emerald); font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; }
+        #diferenciais-section h2 { color: var(--color-white); font-size: 2rem; margin: 0.5rem 0 2.5rem; }
+        .dif-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+        .dif-item { background-color: rgba(255,255,255,0.06); padding: 1.75rem; border-radius: 0.5rem; border-left: 3px solid var(--color-emerald); }
+        .dif-item h3 { color: var(--color-emerald); font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .dif-item p { color: #B7C0D1; font-size: 0.92rem; margin-bottom: 0; }
+
+        /* ===== ÁREAS DE ATUAÇÃO ===== */
+        #situations-section { background-color: var(--color-white); padding: 4.5rem 0; }
+        #situations-section h2 { text-align: center; font-size: 2rem; margin-bottom: 0.5rem; }
+        .section-sub { text-align: center; color: var(--color-gray-dark); margin-bottom: 2.5rem; font-size: 1.05rem; }
+        .situations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.5rem; }
+        .situation-card {
+            background-color: var(--color-gray-light);
+            padding: 1.75rem; border-radius: 0.5rem; text-align: center;
+            transition: transform .2s ease;
+        }
+        .situation-card:hover { transform: translateY(-4px); }
+        .situation-card .icon { font-size: 2.2rem; color: var(--color-emerald); margin-bottom: 0.9rem; }
+        .situation-card h3 { font-size: 1rem; font-weight: 700; }
+
+        /* ===== SOBRE ===== */
+        #about-section { background-color: var(--color-gray-light); padding: 4.5rem 0; }
+        .about-container { display: flex; align-items: flex-start; gap: 3rem; }
+        .about-image { flex: 0.45; text-align: center; }
+        .about-image img { max-width: 100%; border-radius: 0.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .about-text { flex: 1; }
+        .about-text h2 { font-size: 1.9rem; margin-bottom: 1rem; }
+        .about-text p { color: var(--color-navy); text-align: justify; }
+        .credentials { list-style: none; margin: 1.25rem 0; }
+        .credentials li { padding-left: 1.5rem; position: relative; margin-bottom: 0.5rem; font-size: 0.95rem; }
+        .credentials li::before { content: '\f00c'; font-family: 'Font Awesome 6 Free'; font-weight: 900; color: var(--color-emerald); position: absolute; left: 0; }
+
+        /* ===== PROTOCOLO ===== */
+        #process-section { background-color: var(--color-white); padding: 4.5rem 0; }
+        #process-section h2 { text-align: center; font-size: 2rem; margin-bottom: 2.5rem; }
+        .steps-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+        .step-item { padding: 1.5rem; border-radius: 0.5rem; background-color: var(--color-gray-light); }
+        .step-item .number { font-size: 1.6rem; color: var(--color-emerald); font-weight: 800; margin-bottom: 0.5rem; }
+        .step-item h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+        .step-item p { font-size: 0.92rem; color: var(--color-gray-dark); margin-bottom: 0; }
+
+        /* ===== FAQ ===== */
+        #faq-section { background-color: var(--color-gray-light); padding: 4.5rem 0; }
+        #faq-section h2 { text-align: center; font-size: 2rem; margin-bottom: 2rem; }
+        .accordion-item { background: var(--color-white); border: 1px solid #e2e8f0; margin-bottom: 0.6rem; border-radius: 0.4rem; }
+        .accordion-header {
+            padding: 1.1rem 1.3rem; cursor: pointer;
+            display: flex; justify-content: space-between; align-items: center;
+            font-weight: 700; font-size: 1rem;
+        }
+        .accordion-content { padding: 0 1.3rem 1.1rem; display: none; color: var(--color-gray-dark); font-size: 0.93rem; }
+
+        /* ===== CTA FINAL ===== */
+        #cta-final { background-color: var(--color-navy); padding: 4rem 0; text-align: center; }
+        #cta-final h2 { color: var(--color-white); font-size: 1.8rem; max-width: 560px; margin: 0 auto 1.75rem; }
+
+        /* ===== FOOTER ===== */
+        #main-footer { background-color: var(--color-navy-soft); color: #cbd5e1; padding: 2rem 0; font-size: 0.82rem; text-align: center; }
+        #main-footer a { color: #cbd5e1; text-decoration: none; margin: 0 0.5rem; }
+        #main-footer a:hover { text-decoration: underline; }
+        .footer-oab { font-family: monospace; color: var(--color-emerald); margin-top: 0.5rem; }
+
+        .whatsapp-float-btn {
+            position: fixed; bottom: 20px; right: 20px;
+            width: 60px; height: 60px;
+            background-color: var(--color-emerald);
+            border-radius: 50%;
+            display: flex; justify-content: center; align-items: center;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.5);
+            z-index: 999;
+        }
+
+        @media (max-width: 768px) {
+            .header-nav { display: none; }
+            .hero-container { flex-direction: column; }
+            #hero-section h1 { font-size: 1.9rem; }
+            .dif-grid { grid-template-columns: 1fr; }
+            .about-container { flex-direction: column; }
+            .about-image { align-self: center; max-width: 240px; }
+            .steps-container { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
-
 <body>
-    <header id="cabecalho">
-        <div class="container Flex">
-            <div id="logo">
-                <h4 id="teste">ERIK JANSON ASSESSORIA JURÍDICA</h4>
+
+    <header id="main-header">
+        <div class="container header-content">
+            <span class="logo-text">Erik Janson<span>.</span></span>
+            <div class="header-nav">
+                <a href="#areas">Áreas de atuação</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#faq">Dúvidas</a>
+                <span class="seal-tag">OAB/ES 19.910</span>
+                <button class="btn btn-primary" onclick="location.href=buildWhatsappLink()">Fale Agora</button>
             </div>
-            <nav id="menu">
-                <input type="checkbox" id="check">
-                <label for="check" id="lblmenu">&#x2263;</label>
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#section-servicos">Atuação</a></li>
-                    <li><a href="#publicacoes">Publicações</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                    <li id="links-uteis"><a href="./links_uteis.html">Links Úteis</a></li>
-                    <li><a href="https://globogroup.com.br/scpj">Sistema</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
-    <!-- Conteúdo principal - Destaque -->
-    <main>
-        <div class="container divisor">
-            <h1>ASSESSORIA TRABALHISTA E EMPRESARIAL</h1>
-            <h2>AGILIDADE, CONFIANÇA E SERIEDADE</h2>
-            <h3>Nos dias atuais uma boa gestão jurídica se tornou imprescindível para a prevenção de litígios,
-                racionalização de recursos, redução de riscos e otimização de ganhos. Uma decisão mal tomada pode
-                significar o fracasso de toda uma vida e prejuízos incalculáveis, principalmente no mundo dos negócios
-                sejam eles pequenos ou grandes. Nosso compromisso é proporcionar solução adequada a nossos clientes
-                maximizando seus lucros e resultados. Entre em contato, temos uma solução ideal para seu problema.
-            </h3>
-            <a href="#contato" class="botao">Entre em Contato</a>
-        </div>
-
-    </main>
-
-    <!-- sobre -->
-    <section id="sobre">
-        <div class="container Flex2">
-
-            <!--<div id="destaquesobre">
-                <img src="image/small_erik.png" alt="Erik Janson Advogado">
-            </div> -->
-            <figure class="fotolegenda" id="destaquesobre">
-                <img src="image/small_erik.png" alt="Erik Janson Advogado">
-                <figcaption>
-                    <div>
-                        <h2>Erik Janson</h2>
-                        <br>
-                        <h4>ADVOGADO</h4>
-                        <br>
-                        <h5>
-                            <a href="http://www.facebook.com" target="_blank"><ion-icon name="logo-facebook"
-                                    class="icones-sobre"></ion-icon>
-                            </a>
-                            <a href="http://www.youtube.com" target="_blank"><ion-icon name="logo-youtube"
-                                    class="icones-sobre"></ion-icon>
-                            </a>
-
-                            <a href="http://www.twitter.com" target="_blank"><ion-icon name="logo-twitter"
-                                    class="icones-sobre"></ion-icon>
-                            </a>
-                        </h5>
-                        <br>
-                        <h5>
-                            <a href="https://wa.me/5527998518149?text=Ol%C3%A1" target="_blank"><ion-icon
-                                    name="logo-whatsapp" class="icones-sobre"></ion-icon>
-                            </a>
-                            <a href="http://www.instagram.com" target="_blank"><ion-icon name="logo-instagram"
-                                    class="icones-sobre"></ion-icon>
-                            </a>
-                            <a href="http://www.linkedim.com" target="_blank"><ion-icon name="logo-linkedin"
-                                    class="icones-sobre"></ion-icon>
-                            </a>
-                        </h5>
-                    </div>
-                </figcaption>
-            </figure>
-            <div id="textosobre">
-                <h2 class="sectionsubtitle">SOBRE NÓS</h2>
-                <h3 class="sectiontext">
-                    Erik Janson é advogado graduado pela Faculdade de Direito de Ipatinga –
-                    FADIPA com inscrição
-                    ativa na OAB/ES nº 19.910. Pós-graduado em Direito Público com ênfase em Licitações e Contratos
-                    Administrativos, Pós-graduado em Direito Empresarial e Pós-graudado em LGPD - Lei Geral de
-                    Proteção de Dados. Com atuação em todo o Espírito Santo, principalmente na Grande Vitória,
-                    prestamos serviços advocatícios consultivo e contencioso. Estamos no mercado desde 2007, atuando
-                    nas áreas trabalhista, civil, administrativa e eleitoral. Nosso foco é proporcionar aos nossos
-                    clientes uma atuação personalizada e eficiente de forma a garantir a melhor solução para os
-                    problemas encontrados. Principalmente nas questões trabalhistas, os empregadores acabam por
-                    enfrentar dificuldades ao se depararem com demandas judiciais, pois a ausência de um parceiro
-                    que acompanhe, dia a dia, a rotina da empresa pode inviabilizar uma boa e eficiente defesa,
-                    gerando altos custos com indenizações trabalhistas. Nosso compromisso é acompanhar as rotinas
-                    diárias de nossos clientes, garantindo consultoria e assessoria constante, o que minimizará os
-                    riscos trabalhistas envolvidos com cada atividade. Mas nossa atuação não se restringe a demandas
-                    trabalhistas. Também prestamos assessoria e consultoria em Direito Público/Administrativo
-                    principalmente no que se relaciona à licitações e contratos administrativos, acompanhando desde
-                    os procedimentos licitatórios até eventuais demandas envolvendo o tema. Conheça nosso trabalho.
-                    Entre em contato e agende uma visita.
-                </h3>
-
-            </div>
-
-        </div>
-    </section>
-
-    <section id="secaodevideo">
-        <div class="container Flex3">
-
-            <div id="textovideo">
-                <h2 class="sectionsubtitle">NOSSA MISSÃO</h2>
-                <br>
-                <h3 class="sectiontext">
-                    Proporcionar aos nossos clientes soluções personalizadas e eficientes com vista à prevenção de
-                    conflitos e demandas.
-                    <br>
-                    <br>
-                    <br>
-                    Apresentar o melhor recurso técnico-jurídico para a solução eficaz dos problemas encontrados.
-                </h3>
-            </div>
-            <div id="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/l8NQnk8IFJo"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- serviços -->
-    <section id="section-servicos">
-        <div class="container margem-fundo">
-            <h2 class="sectionsubtitle">NOSSOS SERVIÇOS</h2>
-        </div>
-        <div class="container flex-wrap">
-
-            <!-- Serviço 1 -->
-            <div class="servicos">
-                <a href="./paginas/trabalhista.html" class="link-servicos">
-                    <!-- ícone de serviços -->
-                    <ion-icon name="briefcase-sharp" class="icone-servico"></ion-icon>
-                </a>
-                <a href="./paginas/trabalhista.html" class="link-servicos">
-                    <div class="conteudo-servico">
-                        <div class="titulo-servico">
-                            <h5>TRABALHISTA</h5>
-                        </div>
-                        <div class="separador"></div>
-                        <div class="descricao-servico">
-                            <p>Consultoria e assessoria completa para empregador e empregado.</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Serviço 2 -->
-            <div class="servicos">
-                <a href="./paginas/direito-administrativo.html" class="link-servicos">
-                    <!-- ícone de serviços -->
-                    <ion-icon name="file-tray-full-sharp" class="icone-servico"></ion-icon>
-                </a>
-                <a href="./paginas/direito-administrativo.html" class="link-servicos">
-                    <div class="conteudo-servico">
-                        <div class="titulo-servico">
-                            <h5>ADMINISTRATIVO</h5>
-                        </div>
-                        <div class="separador"></div>
-                        <div class="descricao-servico">
-                            <p>Assessoria em processos administrativos, contratos administrativos e procedpelimentos
-                                licitatórios.</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Serviço 3 -->
-            <div class="servicos">
-                <!-- ícone de serviços -->
-                <ion-icon name="people-sharp" class="icone-servico"></ion-icon>
-
-                <div class="conteudo-servico">
-                    <div class="titulo-servico">
-                        <h5>DIREITO CIVIL</h5>
-                    </div>
-                    <div class="separador"></div>
-                    <div class="descricao-servico">
-                        <p>Acompanhamento de problemas relacionados ao Direito Civil contencioso e voluntário.
-                            Proposição de demandas diversas.</p>
-                    </div>
+    <section id="hero-section">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <h1>Advocacia Trabalhista em todo o Espírito Santo</h1>
+                <p class="subheadline">Mais de 19 anos de experiência em Direito do Trabalho — incluindo mais de uma década atuando na defesa de grandes empresas. Hoje, esse conhecimento trabalha a seu favor.</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" onclick="location.href=buildWhatsappLink()">Falar agora pelo WhatsApp</button>
+                    <a href="#areas" class="btn btn-outline">Ver áreas de atuação</a>
                 </div>
             </div>
-
-            <!-- Serviço 4 -->
-            <div class="servicos">
-                <a href="./paginas/consumidor.html" class="link-servicos">
-                    <!-- ícone de serviços -->
-                    <ion-icon name="cart-sharp" class="icone-servico"></ion-icon>
-                </a>
-                <a href="./paginas/consumidor.html" class="link-servicos">
-                    <div class="conteudo-servico">
-                        <div class="titulo-servico">
-                            <h5>CONSUMIDOR</h5>
-                        </div>
-                        <div class="separador"></div>
-                        <div class="descricao-servico">
-                            <p>Orientação, assessoria e acompanhamento de demandas relacionadas ao direito do
-                                consumidor.
-                                Atuação tanto pelo consumidor, quanto pelo fornecedor.</p>
-                        </div>
-                    </div>
-                </a>
+            <div class="hero-image">
+                <!-- Substitua pela foto profissional do Erik -->
+                <img src="image/erik-janson-foto.webp" alt="Erik Janson, advogado trabalhista OAB/ES 19.910" width="480" height="480" loading="lazy" decoding="async">
             </div>
-
-            <!-- Serviço 5 -->
-            <div class="servicos">
-                <a href="./paginas/eleitoral.html" class="link-servicos">
-                    <!-- ícone de serviços -->
-                    <ion-icon name="toggle-sharp" class="icone-servico"></ion-icon>
-                </a>
-                <a href="./paginas/eleitoral.html" class="link-servicos">
-                    <div class="conteudo-servico">
-                        <div class="titulo-servico">
-                            <h5>ELEITORAL</h5>
-                        </div>
-                        <div class="separador"></div>
-                        <div class="descricao-servico">
-                            <p>Consultoria e assessoria jurídica para candidatos e partidos políticos. Proposição de
-                                ações e
-                                defesa em processos eleitorais.</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Serviço 6 -->
-            <div class="servicos">
-                <a href="./paginas/direito-administrativo.html" class="link-servicos">
-                    <!-- ícone de serviços -->
-                    <ion-icon name="cash-sharp" class="icone-servico"></ion-icon>
-                </a>
-                <a href="./paginas/direito-administrativo.html" class="link-servicos">
-                    <div class="conteudo-servico">
-                        <div class="titulo-servico">
-                            <h5>LICITAÇÕES</h5>
-                        </div>
-                        <div class="separador"></div>
-                        <div class="descricao-servico">
-                            <p>Acompanhamento e orientação sobre processos licitatórios diversos.</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
         </div>
-
-
     </section>
 
-    <!--publicações-->
-    <section id="publicacoes">
+    <section id="diferenciais-section">
         <div class="container">
-            <h2 class="sectionsubtitle">PUBLICAÇÕES</h2>
-            <div id="cards" class="Flex4">
-
-                <!-- cartão 5 -->
-                <div class="card">
-                    <img src="image/LGPD-1.jpeg" alt="LGPD x Contrato de Trabalho">
-                    <h3>LGPD X TRABALHO</h3>
-                    <p>A LGPD (Lei Geral de Proteção de Dados) é a lei brasileira que regula o tratamento de
-                        dados pessoais. Oficialmente conhecida como ...</p>
-                    <a href="./publicacoes/breves-consideracoes-lgpd-trabalho.html" class="botao">Leia</a>
+            <span class="eyebrow">Por que Erik Janson</span>
+            <h2>O que muda quando você contrata um advogado que já esteve do outro lado</h2>
+            <div class="dif-grid">
+                <div class="dif-item">
+                    <h3>Experiência de quase duas décadas</h3>
+                    <p>Atuação contínua em Direito do Trabalho desde 2007, acompanhando casos em todas as instâncias da Justiça do Trabalho.</p>
                 </div>
-
-
-                <!-- cartão 4 -->
-                <div class="card">
-                    <img src="image/Carona.jpg" alt="Ata de Registro de Preços">
-                    <h3>CARONA</h3>
-                    <p>A chamada “carona” consiste na utilização da Ata de Registro de Preços por órgãos não
-                        participantes, ou seja, a contratação de ...</p>
-                    <a href="publicacoes/carona.html" class="botao">Leia</a>
+                <div class="dif-item">
+                    <h3>Conhecimento dos dois lados</h3>
+                    <p>Atuação anterior na defesa de empresas revela, na prática, onde os empregadores costumam falhar — e como isso pode ser usado a seu favor.</p>
                 </div>
-
-                <!-- cartão 3 -->
-                <div class="card">
-                    <img src="image/emprestimo-card.png" alt="Empresa Simples de Crédito (ESC)">
-                    <h3>Empresa Simples de Crédito</h3>
-                    <p>A Empresa Simples de Crédito (ESC) é uma nova modalidade de negócio criada pela Lei Complementar
-                        nº 167, de 24 de abril de 2019...</p>
-                    <a href="publicacoes/empresa-simples-credito.html" class="botao">Leia</a>
+                <div class="dif-item">
+                    <h3>Cobertura em todo o Espírito Santo</h3>
+                    <p>Atendimento a trabalhadores na Grande Vitória e no interior do estado, presencial ou remoto.</p>
                 </div>
-
-                <!-- cartão 2 -->
-                <div class="card">
-                    <img src="image/mitigate-loss-card.png" alt="DUTY TO MITIGATE THE LOSS">
-                    <h3>DUTY TO MITIGATE THE LOSS</h3>
-                    <p>Como corolário do princípio da boa-fé objetiva, surge o dever de mitigar o próprio dano, ou "Duty
-                        to mitigate the loss".</p>
-                    <a href="publicacoes/duty-to-mitigate-the-loss.html" class="botao">Leia</a>
-                </div>
-
-                <!-- cartão 1 -->
-                <div class="card">
-                    <img src="image/limbo-card.jpg" alt="LIMBO PREVIDENCIARIO">
-                    <h3>LIMBO PREVIDENCIÁRIO</h3>
-                    <p>No contexto complexo das relações de trabalho, há um fenômeno que pode afetar significativamente
-                        tanto o trabalhador...</p>
-                    <a href="publicacoes/limbo-previdenciario.html" class="botao">Leia</a>
-                </div>
-                
-            </div>
-            <div class="todos">
-                <a href="publicacoes/todas-publicacoes.html" class="botao">Leia todas as nossas publicações</a>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container Flex5" id="contato">
-            <div id="formulario-contato" class="container form-contato">
-                <div id="titulo-contato">
-                    <h4>ENTRE EM CONTATO</h4>
+    <section id="situations-section" id="areas">
+        <div class="container">
+            <h2>Em que posso te ajudar</h2>
+            <p class="section-sub">Áreas de atuação com foco em Direito do Trabalho</p>
+            <div class="situations-grid">
+                <div class="situation-card"><i class="fas fa-file-signature icon"></i><h3>Demissão sem justa causa</h3></div>
+                <div class="situation-card"><i class="fas fa-balance-scale icon"></i><h3>Contestação de justa causa</h3></div>
+                <div class="situation-card"><i class="fas fa-user-shield icon"></i><h3>Assédio moral no trabalho</h3></div>
+                <div class="situation-card"><i class="fas fa-file-invoice-dollar icon"></i><h3>Verbas rescisórias</h3></div>
+                <div class="situation-card"><i class="fas fa-piggy-bank icon"></i><h3>FGTS e seguro-desemprego</h3></div>
+                <div class="situation-card"><i class="fas fa-clock icon"></i><h3>Horas extras não pagas</h3></div>
+                <div class="situation-card"><i class="fas fa-truck icon"></i><h3>Direitos de motoristas</h3></div>
+                <div class="situation-card"><i class="fas fa-first-aid icon"></i><h3>Acidente de trabalho</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-section">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="image/erik-janson-foto.webp" alt="Dr. Erik Janson" width="360" height="360" loading="lazy" decoding="async">
+            </div>
+            <div class="about-text" id="sobre">
+                <h2>Quem é Erik Janson</h2>
+                <p>Erik Janson é advogado graduado pela Faculdade de Direito de Ipatinga (FADIPA), com inscrição ativa na OAB/ES nº 19.910.</p>
+                <ul class="credentials">
+                    <li>Pós-graduado em Direito Público, com ênfase em Licitações e Contratos Administrativos</li>
+                    <li>Pós-graduado em Direito Empresarial</li>
+                    <li>Pós-graduado em LGPD — Lei Geral de Proteção de Dados</li>
+                    <li>Atuação em Direito do Trabalho desde 2007</li>
+                </ul>
+                <p>Depois de anos atuando na defesa de grandes empresas — incluindo grupos de mídia e indústria — Erik Janson direciona hoje esse conhecimento para representar o trabalhador, entendendo como poucos as estratégias usadas do outro lado da mesa.</p>
+                <button class="btn btn-primary" onclick="location.href=buildWhatsappLink()">Fale com o escritório</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="process-section">
+        <div class="container">
+            <h2>Como funciona o atendimento</h2>
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="number">1</div>
+                    <h3>Contato inicial</h3>
+                    <p>Você entra em contato pelo WhatsApp e conta, em linhas gerais, o que está acontecendo.</p>
                 </div>
-
-                <form action="https://globogroup.com.br/scpj/system/send_mail/send_mail_ejvc.php" method="post" id="meuFormulario">
-                    <input type="hidden" name="destinatario" value="contato@erikjanson.adv.br">
-                    <input type="hidden" name="assunto" value="Contato Site Erik Janson Advogado">
-                    <br>
-                    <h3>Nome:</h3>
-                    <div class="divcampos">
-                        <input type="text" id="nome" size="35" name="nome" required>
-                    </div>
-                    <br>
-                    <h3>E-mail:</h3>
-                    <div class="divcampos">
-                        <input type="text" id="email" size="35" name="email" required>
-                    </div>
-                    <br>
-                    <h3>Deixe sua mensagem:</h3>
-                   <div class="divcampos">
-                        <textarea name="mensagem" id="mensagem" cols="35" rows="10" required></textarea>
-                    </div>
-                    <br>
-                    <div class="divcampos">
-                        <div class="g-recaptcha" data-sitekey="6Lebh3MqAAAAAB0aAJbJA__1jJF4mALySIDtRSoY"></div>
-                    </div>
-                    <br>
-                    <div id="divbotoes">
-                        <input type="button" name="BTEnvia" value="Enviar" class="botoes" onclick="verificareCaptcha()">
-                        <input type="reset" name="BTApaga" value="Apagar" class="botoes">
-                    </div>
-                    <br>
-                </form>
-            </div>
-            <div id="localizacao" class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.7490091675954!2d-40.324406999999994!3d-20.351984899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb83de1f4cc85d1%3A0xc30823b3825503aa!2sR.%20Rodolfo%20Valdet%C3%A1rio%2C%20103%20-%20Nossa%20Sra.%20da%20Penha%2C%20Vila%20Velha%20-%20ES%2C%2029110-255!5e0!3m2!1spt-BR!2sbr!4v1690394820152!5m2!1spt-BR!2sbr"   style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="step-item">
+                    <div class="number">2</div>
+                    <h3>Análise do caso</h3>
+                    <p>Conversamos com calma sobre os detalhes da situação e reunimos a documentação necessária.</p>
+                </div>
+                <div class="step-item">
+                    <div class="number">3</div>
+                    <h3>Orientação e próximos passos</h3>
+                    <p>Você recebe uma explicação clara das suas opções, sem promessas — só os fatos e o caminho possível.</p>
+                </div>
             </div>
         </div>
-        <div class="separador-fundo"></div>
-        <div id="rodape">
-            <h2>Desenvolvedor: <a href="mailto:contato@erikjanson.adv.br">Erik Janson</a>. &#169; Copytright 2023 Erik
-                Janson.</h2>
-        </div>
+    </section>
 
-        <a href="#" class="voltar-ao-topo">Topo &#8679;</a>
+    <section id="faq-section">
+        <div class="container">
+            <h2 id="faq">Dúvidas frequentes</h2>
+
+            <div class="accordion-item">
+                <div class="accordion-header"><span>Fui demitido sem justa causa. Quais são meus direitos?</span><span>+</span></div>
+                <div class="accordion-content"><p>Em regra, o trabalhador demitido sem justa causa tem direito a aviso prévio, saldo de salário, férias vencidas e proporcionais com um terço, décimo terceiro proporcional, saque do FGTS com multa de 40% e, em muitos casos, seguro-desemprego. Cada situação tem particularidades que valem uma análise específica.</p></div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>Posso contestar uma demissão por justa causa?</span><span>+</span></div>
+                <div class="accordion-content"><p>Sim. A justa causa precisa estar fundamentada em uma das hipóteses previstas na CLT e devidamente comprovada pelo empregador. Quando isso não acontece, é possível questionar judicialmente.</p></div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>O que caracteriza assédio moral no trabalho?</span><span>+</span></div>
+                <div class="accordion-content"><p>Exposição repetida a situações humilhantes, constrangedoras ou degradantes durante o trabalho, geralmente vindas de superiores hierárquicos. Pode gerar direito a indenização por danos morais, entre outras medidas.</p></div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header"><span>Tenho direito a horas extras não pagas?</span><span>+</span></div>
+                <div class="accordion-content"><p>Se você trabalhou além da jornada contratual sem pagamento correspondente (ou compensação em banco de horas válido), pode ter direito a receber essas horas com adicional, mesmo após o fim do contrato.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta-final">
+        <div class="container">
+            <h2>Se você está com dúvidas sobre seus direitos trabalhistas, o primeiro passo é conversar.</h2>
+            <button class="btn btn-primary" onclick="location.href=buildWhatsappLink()">Falar no WhatsApp</button>
+        </div>
+    </section>
+
+    <footer id="main-footer">
+        <div class="container">
+            <p>&copy; 2026 Erik Janson — Advocacia Trabalhista. Todos os direitos reservados.</p>
+            <p class="footer-oab">OAB/ES 19.910 · Espírito Santo, Brasil</p>
+            <div class="footer-links">
+                <a href="privacidade.html">Política de Privacidade</a>
+                <a href="termosdeuso.html">Termos de Uso</a>
+            </div>
+        </div>
     </footer>
 
-    <script>
-        function verificareCaptcha() {
-            const campo =  document.querySelector('#g-recaptcha-response').value
-    
-            if (campo.trim() === "") {
-                alert("O reCaptcha não foi preenchido.");
-            } else {
-              document.getElementById("meuFormulario").submit();
-            }
-        }
-        
-        </script>
-</body>
+    <div class="whatsapp-float-btn" onclick="location.href=buildWhatsappLink()"></div>
 
+    <script>
+        const whatsappNumber = '5527998518149';
+        function buildWhatsappLink() {
+            const msg = encodeURIComponent('Olá! Gostaria de falar sobre uma dúvida trabalhista.');
+            const link = 'https://api.whatsapp.com/send?phone=' + whatsappNumber + '&text=' + msg;
+            gtag_report_conversion(link);
+            return link;
+        }
+
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const parent = header.parentElement;
+                const icon = header.querySelector('span:last-child');
+                document.querySelectorAll('.accordion-item').forEach(item => {
+                    if (item !== parent) {
+                        item.querySelector('.accordion-content').style.display = 'none';
+                        item.querySelector('.accordion-header span:last-child').textContent = '+';
+                    }
+                });
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                    icon.textContent = '+';
+                } else {
+                    content.style.display = 'block';
+                    icon.textContent = '-';
+                }
+            });
+        });
+
+        const whatsappSvg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width:24px;height:24px;fill:#fff;"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>';
+        document.querySelector('.whatsapp-float-btn').innerHTML = whatsappSvg;
+    </script>
+
+</body>
 </html>
