@@ -1,1 +1,420 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17833485449">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17833485449');
+</script>
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERIK JANSON ASSESSORIA JURÍDICA</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description"
+        content="Advocacia epscializada empresarial, trabalhista, administrativa, licitações e contratos administrativos, Tribunais de Conta. Assessoria consultiva, preventiva e contenciosa. Soluções personalizadas para sua necessidade.">
+    <link rel="icon" href="image/favicon.ico"> <!-- colocar o favicon-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <!-- Código do ReCaptcha-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <!-- ---------------------->
+
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="container Flex">
+            <div id="logo">
+                <h4 id="teste">ERIK JANSON ASSESSORIA JURÍDICA</h4>
+            </div>
+            <nav id="menu">
+                <input type="checkbox" id="check">
+                <label for="check" id="lblmenu">&#x2263;</label>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#section-servicos">Atuação</a></li>
+                    <li><a href="#publicacoes">Publicações</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li id="links-uteis"><a href="./links_uteis.html">Links Úteis</a></li>
+                    <li><a href="https://globogroup.com.br/scpj">Sistema</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal - Destaque -->
+    <main>
+        <div class="container divisor">
+            <h1>ASSESSORIA TRABALHISTA E EMPRESARIAL</h1>
+            <h2>AGILIDADE, CONFIANÇA E SERIEDADE</h2>
+            <h3>Nos dias atuais uma boa gestão jurídica se tornou imprescindível para a prevenção de litígios,
+                racionalização de recursos, redução de riscos e otimização de ganhos. Uma decisão mal tomada pode
+                significar o fracasso de toda uma vida e prejuízos incalculáveis, principalmente no mundo dos negócios
+                sejam eles pequenos ou grandes. Nosso compromisso é proporcionar solução adequada a nossos clientes
+                maximizando seus lucros e resultados. Entre em contato, temos uma solução ideal para seu problema.
+            </h3>
+            <a href="#contato" class="botao">Entre em Contato</a>
+        </div>
+
+    </main>
+
+    <!-- sobre -->
+    <section id="sobre">
+        <div class="container Flex2">
+
+            <!--<div id="destaquesobre">
+                <img src="image/small_erik.png" alt="Erik Janson Advogado">
+            </div> -->
+            <figure class="fotolegenda" id="destaquesobre">
+                <img src="image/small_erik.png" alt="Erik Janson Advogado">
+                <figcaption>
+                    <div>
+                        <h2>Erik Janson</h2>
+                        <br>
+                        <h4>ADVOGADO</h4>
+                        <br>
+                        <h5>
+                            <a href="http://www.facebook.com" target="_blank"><ion-icon name="logo-facebook"
+                                    class="icones-sobre"></ion-icon>
+                            </a>
+                            <a href="http://www.youtube.com" target="_blank"><ion-icon name="logo-youtube"
+                                    class="icones-sobre"></ion-icon>
+                            </a>
+
+                            <a href="http://www.twitter.com" target="_blank"><ion-icon name="logo-twitter"
+                                    class="icones-sobre"></ion-icon>
+                            </a>
+                        </h5>
+                        <br>
+                        <h5>
+                            <a href="https://wa.me/5527998518149?text=Ol%C3%A1" target="_blank"><ion-icon
+                                    name="logo-whatsapp" class="icones-sobre"></ion-icon>
+                            </a>
+                            <a href="http://www.instagram.com" target="_blank"><ion-icon name="logo-instagram"
+                                    class="icones-sobre"></ion-icon>
+                            </a>
+                            <a href="http://www.linkedim.com" target="_blank"><ion-icon name="logo-linkedin"
+                                    class="icones-sobre"></ion-icon>
+                            </a>
+                        </h5>
+                    </div>
+                </figcaption>
+            </figure>
+            <div id="textosobre">
+                <h2 class="sectionsubtitle">SOBRE NÓS</h2>
+                <h3 class="sectiontext">
+                    Erik Janson é advogado graduado pela Faculdade de Direito de Ipatinga –
+                    FADIPA com inscrição
+                    ativa na OAB/ES nº 19.910. Pós-graduado em Direito Público com ênfase em Licitações e Contratos
+                    Administrativos, Pós-graduado em Direito Empresarial e Pós-graudado em LGPD - Lei Geral de
+                    Proteção de Dados. Com atuação em todo o Espírito Santo, principalmente na Grande Vitória,
+                    prestamos serviços advocatícios consultivo e contencioso. Estamos no mercado desde 2007, atuando
+                    nas áreas trabalhista, civil, administrativa e eleitoral. Nosso foco é proporcionar aos nossos
+                    clientes uma atuação personalizada e eficiente de forma a garantir a melhor solução para os
+                    problemas encontrados. Principalmente nas questões trabalhistas, os empregadores acabam por
+                    enfrentar dificuldades ao se depararem com demandas judiciais, pois a ausência de um parceiro
+                    que acompanhe, dia a dia, a rotina da empresa pode inviabilizar uma boa e eficiente defesa,
+                    gerando altos custos com indenizações trabalhistas. Nosso compromisso é acompanhar as rotinas
+                    diárias de nossos clientes, garantindo consultoria e assessoria constante, o que minimizará os
+                    riscos trabalhistas envolvidos com cada atividade. Mas nossa atuação não se restringe a demandas
+                    trabalhistas. Também prestamos assessoria e consultoria em Direito Público/Administrativo
+                    principalmente no que se relaciona à licitações e contratos administrativos, acompanhando desde
+                    os procedimentos licitatórios até eventuais demandas envolvendo o tema. Conheça nosso trabalho.
+                    Entre em contato e agende uma visita.
+                </h3>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="secaodevideo">
+        <div class="container Flex3">
+
+            <div id="textovideo">
+                <h2 class="sectionsubtitle">NOSSA MISSÃO</h2>
+                <br>
+                <h3 class="sectiontext">
+                    Proporcionar aos nossos clientes soluções personalizadas e eficientes com vista à prevenção de
+                    conflitos e demandas.
+                    <br>
+                    <br>
+                    <br>
+                    Apresentar o melhor recurso técnico-jurídico para a solução eficaz dos problemas encontrados.
+                </h3>
+            </div>
+            <div id="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/l8NQnk8IFJo"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- serviços -->
+    <section id="section-servicos">
+        <div class="container margem-fundo">
+            <h2 class="sectionsubtitle">NOSSOS SERVIÇOS</h2>
+        </div>
+        <div class="container flex-wrap">
+
+            <!-- Serviço 1 -->
+            <div class="servicos">
+                <a href="./paginas/trabalhista.html" class="link-servicos">
+                    <!-- ícone de serviços -->
+                    <ion-icon name="briefcase-sharp" class="icone-servico"></ion-icon>
+                </a>
+                <a href="./paginas/trabalhista.html" class="link-servicos">
+                    <div class="conteudo-servico">
+                        <div class="titulo-servico">
+                            <h5>TRABALHISTA</h5>
+                        </div>
+                        <div class="separador"></div>
+                        <div class="descricao-servico">
+                            <p>Consultoria e assessoria completa para empregador e empregado.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Serviço 2 -->
+            <div class="servicos">
+                <a href="./paginas/direito-administrativo.html" class="link-servicos">
+                    <!-- ícone de serviços -->
+                    <ion-icon name="file-tray-full-sharp" class="icone-servico"></ion-icon>
+                </a>
+                <a href="./paginas/direito-administrativo.html" class="link-servicos">
+                    <div class="conteudo-servico">
+                        <div class="titulo-servico">
+                            <h5>ADMINISTRATIVO</h5>
+                        </div>
+                        <div class="separador"></div>
+                        <div class="descricao-servico">
+                            <p>Assessoria em processos administrativos, contratos administrativos e procedpelimentos
+                                licitatórios.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Serviço 3 -->
+            <div class="servicos">
+                <!-- ícone de serviços -->
+                <ion-icon name="people-sharp" class="icone-servico"></ion-icon>
+
+                <div class="conteudo-servico">
+                    <div class="titulo-servico">
+                        <h5>DIREITO CIVIL</h5>
+                    </div>
+                    <div class="separador"></div>
+                    <div class="descricao-servico">
+                        <p>Acompanhamento de problemas relacionados ao Direito Civil contencioso e voluntário.
+                            Proposição de demandas diversas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Serviço 4 -->
+            <div class="servicos">
+                <a href="./paginas/consumidor.html" class="link-servicos">
+                    <!-- ícone de serviços -->
+                    <ion-icon name="cart-sharp" class="icone-servico"></ion-icon>
+                </a>
+                <a href="./paginas/consumidor.html" class="link-servicos">
+                    <div class="conteudo-servico">
+                        <div class="titulo-servico">
+                            <h5>CONSUMIDOR</h5>
+                        </div>
+                        <div class="separador"></div>
+                        <div class="descricao-servico">
+                            <p>Orientação, assessoria e acompanhamento de demandas relacionadas ao direito do
+                                consumidor.
+                                Atuação tanto pelo consumidor, quanto pelo fornecedor.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Serviço 5 -->
+            <div class="servicos">
+                <a href="./paginas/eleitoral.html" class="link-servicos">
+                    <!-- ícone de serviços -->
+                    <ion-icon name="toggle-sharp" class="icone-servico"></ion-icon>
+                </a>
+                <a href="./paginas/eleitoral.html" class="link-servicos">
+                    <div class="conteudo-servico">
+                        <div class="titulo-servico">
+                            <h5>ELEITORAL</h5>
+                        </div>
+                        <div class="separador"></div>
+                        <div class="descricao-servico">
+                            <p>Consultoria e assessoria jurídica para candidatos e partidos políticos. Proposição de
+                                ações e
+                                defesa em processos eleitorais.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Serviço 6 -->
+            <div class="servicos">
+                <a href="./paginas/direito-administrativo.html" class="link-servicos">
+                    <!-- ícone de serviços -->
+                    <ion-icon name="cash-sharp" class="icone-servico"></ion-icon>
+                </a>
+                <a href="./paginas/direito-administrativo.html" class="link-servicos">
+                    <div class="conteudo-servico">
+                        <div class="titulo-servico">
+                            <h5>LICITAÇÕES</h5>
+                        </div>
+                        <div class="separador"></div>
+                        <div class="descricao-servico">
+                            <p>Acompanhamento e orientação sobre processos licitatórios diversos.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!--publicações-->
+    <section id="publicacoes">
+        <div class="container">
+            <h2 class="sectionsubtitle">PUBLICAÇÕES</h2>
+            <div id="cards" class="Flex4">
+
+                <!-- cartão 5 -->
+                <div class="card">
+                    <img src="image/LGPD-1.jpeg" alt="LGPD x Contrato de Trabalho">
+                    <h3>LGPD X TRABALHO</h3>
+                    <p>A LGPD (Lei Geral de Proteção de Dados) é a lei brasileira que regula o tratamento de
+                        dados pessoais. Oficialmente conhecida como ...</p>
+                    <a href="./publicacoes/breves-consideracoes-lgpd-trabalho.html" class="botao">Leia</a>
+                </div>
+
+
+                <!-- cartão 4 -->
+                <div class="card">
+                    <img src="image/Carona.jpg" alt="Ata de Registro de Preços">
+                    <h3>CARONA</h3>
+                    <p>A chamada “carona” consiste na utilização da Ata de Registro de Preços por órgãos não
+                        participantes, ou seja, a contratação de ...</p>
+                    <a href="publicacoes/carona.html" class="botao">Leia</a>
+                </div>
+
+                <!-- cartão 3 -->
+                <div class="card">
+                    <img src="image/emprestimo-card.png" alt="Empresa Simples de Crédito (ESC)">
+                    <h3>Empresa Simples de Crédito</h3>
+                    <p>A Empresa Simples de Crédito (ESC) é uma nova modalidade de negócio criada pela Lei Complementar
+                        nº 167, de 24 de abril de 2019...</p>
+                    <a href="publicacoes/empresa-simples-credito.html" class="botao">Leia</a>
+                </div>
+
+                <!-- cartão 2 -->
+                <div class="card">
+                    <img src="image/mitigate-loss-card.png" alt="DUTY TO MITIGATE THE LOSS">
+                    <h3>DUTY TO MITIGATE THE LOSS</h3>
+                    <p>Como corolário do princípio da boa-fé objetiva, surge o dever de mitigar o próprio dano, ou "Duty
+                        to mitigate the loss".</p>
+                    <a href="publicacoes/duty-to-mitigate-the-loss.html" class="botao">Leia</a>
+                </div>
+
+                <!-- cartão 1 -->
+                <div class="card">
+                    <img src="image/limbo-card.jpg" alt="LIMBO PREVIDENCIARIO">
+                    <h3>LIMBO PREVIDENCIÁRIO</h3>
+                    <p>No contexto complexo das relações de trabalho, há um fenômeno que pode afetar significativamente
+                        tanto o trabalhador...</p>
+                    <a href="publicacoes/limbo-previdenciario.html" class="botao">Leia</a>
+                </div>
+                
+            </div>
+            <div class="todos">
+                <a href="publicacoes/todas-publicacoes.html" class="botao">Leia todas as nossas publicações</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container Flex5" id="contato">
+            <div id="formulario-contato" class="container form-contato">
+                <div id="titulo-contato">
+                    <h4>ENTRE EM CONTATO</h4>
+                </div>
+
+                <form action="https://globogroup.com.br/scpj/system/send_mail/send_mail_ejvc.php" method="post" id="meuFormulario">
+                    <input type="hidden" name="destinatario" value="contato@erikjanson.adv.br">
+                    <input type="hidden" name="assunto" value="Contato Site Erik Janson Advogado">
+                    <br>
+                    <h3>Nome:</h3>
+                    <div class="divcampos">
+                        <input type="text" id="nome" size="35" name="nome" required>
+                    </div>
+                    <br>
+                    <h3>E-mail:</h3>
+                    <div class="divcampos">
+                        <input type="text" id="email" size="35" name="email" required>
+                    </div>
+                    <br>
+                    <h3>Deixe sua mensagem:</h3>
+                   <div class="divcampos">
+                        <textarea name="mensagem" id="mensagem" cols="35" rows="10" required></textarea>
+                    </div>
+                    <br>
+                    <div class="divcampos">
+                        <div class="g-recaptcha" data-sitekey="6Lebh3MqAAAAAB0aAJbJA__1jJF4mALySIDtRSoY"></div>
+                    </div>
+                    <br>
+                    <div id="divbotoes">
+                        <input type="button" name="BTEnvia" value="Enviar" class="botoes" onclick="verificareCaptcha()">
+                        <input type="reset" name="BTApaga" value="Apagar" class="botoes">
+                    </div>
+                    <br>
+                </form>
+            </div>
+            <div id="localizacao" class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.7490091675954!2d-40.324406999999994!3d-20.351984899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb83de1f4cc85d1%3A0xc30823b3825503aa!2sR.%20Rodolfo%20Valdet%C3%A1rio%2C%20103%20-%20Nossa%20Sra.%20da%20Penha%2C%20Vila%20Velha%20-%20ES%2C%2029110-255!5e0!3m2!1spt-BR!2sbr!4v1690394820152!5m2!1spt-BR!2sbr"   style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="separador-fundo"></div>
+        <div id="rodape">
+            <h2>Desenvolvedor: <a href="mailto:contato@erikjanson.adv.br">Erik Janson</a>. &#169; Copytright 2023 Erik
+                Janson.</h2>
+        </div>
+
+        <a href="#" class="voltar-ao-topo">Topo &#8679;</a>
+    </footer>
+
+    <script>
+        function verificareCaptcha() {
+            const campo =  document.querySelector('#g-recaptcha-response').value
+    
+            if (campo.trim() === "") {
+                alert("O reCaptcha não foi preenchido.");
+            } else {
+              document.getElementById("meuFormulario").submit();
+            }
+        }
+        
+        </script>
+</body>
+
+</html>
